@@ -1,0 +1,11 @@
+.text-container{
+    background-color: rgba(220,152,91, 0.82);
+    padding: 7px;
+    font-family: 'AvenirLTStd-Roman';
+    color: #ffffff;
+    font-size: 1em;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
+}

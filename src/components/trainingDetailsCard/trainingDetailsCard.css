@@ -1,0 +1,93 @@
+.trainingDetailsCard{
+    padding-top: 254px;
+}
+
+
+.trainingDetailsCard__grid{
+    min-height: 239px;
+}
+
+
+.trainingDetailsCard__left, .trainingDetailsCard__right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+
+.trainingDetailsCard__square{
+    width: 50%;
+    height: 100%;
+    padding: 15px;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-lang{
+    background-color: #BC6428;
+}
+
+.trainingDetailsCard__square-title{
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.trainingDetailsCard__square-content{
+    font-family: 'AvenirLTStd-Roman';
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-period{
+    background-color: #DC985B;
+    background-image: url('../../images/5jours.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trainingDetailsCard__square-period-text-1{
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 56px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.trainingDetailsCard__square-period-text-2{
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 33px;
+
+}
+
+.trainingDetailsCard__square-period-text-3{
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-obj{
+    background-color: #C19470;
+    background-image: url('../../images/objectif.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-requirements{
+    background-color: #6A93A2;
+    background-image: url('../../images/prequis.png');
+    background-position: center;
+    background-size: cover;
+
+}

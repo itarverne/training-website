@@ -1,0 +1,121 @@
+.calendarCard{
+    padding-bottom: 40px;
+
+}
+
+.calendarCard__right{
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .28);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calendarCard__left{
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, .28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendarCard-formular{
+    width: auto;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-right: 5px;
+}
+
+.calendarCard-formular__form-block{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calendarCard-formular__form-block input{
+    margin: 3px 0!important;
+    background-color: #EFD8C7;
+    color: rgb(0, 0, 0);
+
+}
+
+.rlc-calendar {
+    max-width: 360px;
+    width: auto;
+    border: 0;
+    box-shadow: none;
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #D68847;
+    font-weight: bolder;
+}
+
+.rlc-calendar .rlc-month-and-year-wrapper{
+    border: 0;
+
+}
+
+.rlc-calendar .rlc-month-and-year-wrapper .rlc-month-and-year
+{
+    font-size: 1.1em;
+
+}
+
+
+.rlc-calendar .rlc-days-label
+{
+    font-size: .96em;
+}
+
+.rlc-calendar .rlc-days
+{
+    font-size: .96em;
+}
+
+
+.rlc-day-end-selection, .rlc-day-inside-selection, .rlc-day-selected, .rlc-day-start-selection{
+    background-color: #D68847;
+    
+}
+.rlc-day.rlc-day-out-of-month {
+    color: #ffffff;
+}
+
+.rlc-calendar .rlc-details{
+    display: none;
+}
+
+.calendarCard-formular__form-block label{
+    margin-right: 5px;
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #D68847;
+    font-size: .9em;
+    font-weight: bolder;
+
+}
+
+.calendarCard__submit-btn{
+    background-color: #D68847;
+    max-width: 180px;
+    text-align: center;
+    margin:  3px 0 3px auto;
+    margin-right: 5px;
+}
+
+.calendarCard__submit-btn a {
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bolder;
+
+}
+
+.calendarCard__submit-btn:hover {
+    background-color: #EFD8C7;
+    cursor: pointer;
+
+}

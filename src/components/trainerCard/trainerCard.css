@@ -1,0 +1,72 @@
+.trainerCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 256px;
+    width: 924px;
+    padding-bottom: 20px;
+
+}
+.trainerCard__photo--filter{
+    background-image: linear-gradient(to top, #c69b77, #e0aea5, #eac8d0, #f0e4ee, #ffffff);
+}
+
+.trainerCard__photo{
+    width: 308px;
+    height: 310px;
+    background-image: linear-gradient(to top, #83410b, #b47a4a, #c08d63, #c69b77, transparent, transparent, transparent, transparent), url('../../images/david.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-blend-mode: color;
+
+}
+
+.trainerCard__text{
+    height: 100%;
+    background-color: rgba(255, 255, 255, .58);
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.trainerCard__text-left {
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.trainerCard__text-right {
+    margin: 20px;
+    border-left: 6px solid #c69b77;
+    padding-left: 10px;
+
+}
+
+.trainerCard__trainer-name{
+    font-family: 'AvenirLTStd-Roman';
+    color: #ffffff;
+    font-size: 3.7em;
+    line-height: 1em; 
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.trainerCard__text-title{
+    color: #7C5132;
+    font-family: 'AvenirLTStd-Roman';
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+
+.trainerCard__text-content{
+    color: #43454D;
+    font-family: 'AvenirLTStd-Roman';
+    font-size: 14px;
+    padding-top: 5px;
+
+}

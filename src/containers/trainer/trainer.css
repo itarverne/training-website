@@ -1,0 +1,8 @@
+#trainer{
+    background-image: url('../../images/fond-formateur.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}

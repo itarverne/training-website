@@ -1,0 +1,47 @@
+.card.trainingCard{
+    width: 271px;
+    background-color: rgba(255, 255, 255, 0.58);
+    font-family: 'AvenirLTStd-Roman';
+    color: #43454D;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+.card-tiltle-wrapper{
+    height: 60px;
+    background-color: rgba(220,152,91, 0.82);
+    margin-bottom: 10px;
+}
+
+.card-tiltle-wrapper .card__title{
+    line-height: 60px;
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.card-content-wrapper{
+    padding: 10px;
+    text-align: left;
+
+}
+
+.trainingCard .card__content{
+    padding: 0;
+}
+
+.learn-more-btn.button {
+    background-color: #C69B77;
+    border: 0;
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.learn-more-btn.button:hover{
+    background-color: rgba(220,152,91, 0.82);
+
+}
