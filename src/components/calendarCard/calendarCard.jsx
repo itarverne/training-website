@@ -31,7 +31,7 @@ export default class CalendarCard extends Component {
     return (
       <div className="calendarCard">
         <div className="grid grid--justify-center">
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="calendarCard__left">
               <ReactLightCalendar
                 startDate={this.props.startDate}
@@ -43,7 +43,7 @@ export default class CalendarCard extends Component {
               />
             </div>
           </div>
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="calendarCard__right">
               <div className="grid grid--justify-center">
                 <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--lg">

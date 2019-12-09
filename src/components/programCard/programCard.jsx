@@ -100,7 +100,7 @@ class ProgramCard extends PureComponent {
     return (
       <div className="programCard">
         <div className="grid grid--justify-center programCard__grid">
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="programCard__left">
               <div className="programCard__title padding-xs">programme</div>
               {this.dictionary.left.map(item => (
@@ -134,7 +134,7 @@ class ProgramCard extends PureComponent {
               ))}
             </div>
           </div>
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="programCard__right">
               {this.dictionary.right.map(item => (
                 <div key={item.title}>

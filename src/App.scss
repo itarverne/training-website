@@ -1,0 +1,560 @@
+
+@import './styles/tent.scss';
+
+/*******************/
+/** CSS variables **/
+/*******************/
+$color-bg-primary: #378795;
+$color-bg-dark: #387983;
+$color-bg-dark-hight: #154256;
+$color-bg-light: #178095;
+$color-secondary-light: #D0E6E7;
+$color-gray: #6A93A2;
+$color-text-dark: #1F3C49;
+$color-bg-green-dark: #4E6A71;
+$color-green-light: #63AAB5;
+
+// /** 1 rem = 16px **/
+$little-font-size:  1.5rem; /* 24px; */
+$micro-font-size:  1rem; /* 16px; */
+$nano-font-size:  0.5rem; /* 9px; */
+$header-font-size:  2.5rem;
+
+@mixin style-header{
+  color: white;
+  font-size: $header-font-size;
+}
+
+
+.hide{
+  display: none;
+}
+
+/*************/
+/** General **/
+/*************/
+
+.g-scroll {
+scroll-behavior: smooth;
+overflow-y: scroll;
+// For Chrome in Mac
+-webkit-overflow-scrolling: touch;
+}
+
+/** Menu pur css **/
+.content {
+  position: relative;
+  min-height: 100vh;
+}
+
+.header__logo{
+    display: inline-block;
+    margin-right: 20%;
+    background-color: inherit;
+}
+
+.header__nav-element{
+    display: inline-block;
+}
+
+/* small screens styles */
+@media (max-width: 767px) {
+  .header__logo{
+        display: none;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    min-height: 100vh;
+  }
+  .header__nav-element{
+    display: inline-block;
+    width: 100%;
+  }
+  .content {
+    transform: translateX(0) translateZ(0);
+    transition: transform .2s;
+    will-change: transform;
+  }
+
+  /* Button deco */
+  [class^="nav-button"] {
+    display: block;
+    z-index: 1;
+    height: 3.5rem; width: 3.5rem;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333),
+      linear-gradient(to right, #333, #333);
+    background-position: center top, center, center bottom;
+    background-repeat: no-repeat;
+    background-size: 3.5rem .9rem;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+  
+  /* here's goes the push left effect */
+  body:target .content {
+    transform: translateX(30vw);
+  }
+  .nav-button-close,
+  body:target .nav-button-open {
+    display: none;
+  }
+  .nav-button-open,
+  body:target .nav-button-close {
+    display: block;
+  }
+  
+}
+/* end of small screen media query */
+
+/* Global deco */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 1.6em;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+a {
+  color: #fff;
+}
+.content {
+  padding: 2rem;
+  background-color: #eee;
+  color: #333;
+}
+.header__nav {
+  padding-top: 1em;
+  background: $color-bg-primary;
+  color: #ddd;
+}
+nav a {
+  display: block;
+  padding: .7em;
+  margin-bottom: 2px;
+  text-decoration: none;
+  background: rgba(255,255,255, 0.1);
+}
+/** Fin Menu pur css **/
+
+/*  Helper center vertical */
+.vertical-center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+/* Fin Helper center vertical */
+
+/*  Helper bottom vertical */
+.vertical-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  }
+/* Fin Helper bottom vertical */
+
+/* Debut lazy loading youtube video */
+.youtube {
+    background-color: #000;
+    margin-bottom: 30px;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.youtube img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+    opacity: 0.7;
+}
+.youtube .play-button {
+    width: 90px;
+    height: 60px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 6px;
+}
+.youtube .play-button:before {
+    content: "";
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+    cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+    position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+    top: 50%;
+    left: 50%;
+    transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/* Fin lazy loading youtube video */
+
+
+@include breakpoint-max(sm) {
+  .hide-sm {display: none;}
+}
+
+@include breakpoint-min(md) {
+  .hide-gt-sm {display: none;}
+}
+
+/************/
+/** Header **/
+/************/
+.header{
+  margin:0;
+  vertical-align: middle;
+  background-color: $color-bg-primary;
+}
+.browser{
+  background-color: $color-secondary-light;
+}
+.browser__title{
+font-size: $header-font-size;
+color:$color-text-dark;
+}
+.browser__content{
+font-size: $little-font-size;
+color:$color-text-dark;
+}
+
+.header__cookies-title{
+font-size: $little-font-size;
+  text-transform: uppercase;
+  color:white;
+}
+.header__cookies{
+  position: fixed;
+  z-index:1;
+  background: $color-bg-primary;
+  @include style-header;
+  width: 100%;
+  padding-left: 10px;
+}
+.header__cookies--validate{
+  background-color: $color-gray;
+  border:none;
+  font-size: $little-font-size;
+}
+.header__nav-list{
+    list-style: none;
+    display: inline-block;
+}
+
+/***************/
+/**  Content  **/
+/***************/
+
+.card {
+  background-color: $color-bg-light;
+  border: none;
+}
+.card__content-header{
+  background-color: $color-secondary-light;
+  color: $color-text-dark;
+  height: 100%;
+  padding: 10px;
+  font-size: $little-font-size;
+}
+.card__content {
+  padding: 0;
+}
+.card__content-title{
+  font-size: $little-font-size;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $color-bg-dark;
+  padding: 10px;
+  margin: 0;
+  color: white;
+}
+.card__content-text{
+  font-size: $little-font-size;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: white;
+}
+/***************************/
+/** Hack for Firefox only **/
+/***************************/
+@-moz-document url-prefix() {
+  .card__content-text{
+    padding-top: 0;
+  }
+}
+/************************/
+/** Hack for Edge only **/
+/************************/
+@supports (-ms-ime-align: auto) {
+  .card__content-text{
+    padding-top: 0;
+  }
+}
+
+.card__content-bt{
+  font-size: $little-font-size;
+  text-align: center;
+  margin: 5px;
+  height: 100%;
+}
+.card__content-bt-link{
+  background-color: $color-gray;
+  border: none;
+}
+
+.grid__right-activities{
+height: 100%;
+}
+
+.grid__right-social{
+height: 50%;
+}
+.grid__right-social-link{
+  color: $color-text-dark;
+  display: inline-block;
+  text-align: center;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+.grid__right-social-img{
+  height: 64px;
+  min-width: 64px;
+}
+.grid__right-video{
+  width:100%;
+  border:0;
+}
+
+// Activities
+@include breakpoint-max(md) {
+  .activities{
+    padding-top: 10px;
+  }
+}
+
+.activities__logo{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+}
+.activities__grid{
+  margin-top: 5rem;
+}
+.activities__header{
+  background-color: $color-bg-dark-hight;
+}
+.activities__header-title{
+  font-size: $little-font-size;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.5rem;
+}
+.activities__text{
+  background-color: white;
+  padding: 1rem;
+}
+.activities__button{
+  padding:0;
+}
+.activities__button-link{
+  background-color: $color-gray;
+  text-transform: uppercase;
+  padding: 0.4rem;
+}
+.activities__button--small{
+  padding-top: 1.5rem;
+}
+
+// Company
+.company__text{
+  border-left: 6px solid $color-bg-dark-hight;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company__title{
+  margin-top: 8rem;
+  margin-bottom: 100px;
+}
+
+// Values
+.values {
+  background-color: $color-bg-green-dark;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.values__infos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.values__images{
+height: 100px;
+margin-top: 3px;
+}
+.values__header{
+  color:white;
+  margin-bottom: 100px;
+}
+@include breakpoint-max(sm) {
+  .values__header {margin-bottom: 10px;}
+}
+
+.values__title{
+  color:white;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+.values__row{
+  background-color: $color-green-light;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  min-width: 300px;
+}
+
+@include breakpoint-min(lg) {
+  .values__row{
+    height: 230px;
+  }
+}
+
+.values__row-center{
+  height: 100%;
+}
+.values__gris-2{
+  margin-top: 7rem;
+}
+
+@include breakpoint-max(lg) {
+  .values__gris-2{
+    margin-top: 0;
+  }
+  .values__row{
+    margin-top: 2%;
+  }
+}
+
+// Referenties
+.referencies {
+  padding-top: 5rem;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.referencies__header-title{
+  color: $color-bg-light;
+  margin-bottom: 8rem;
+}
+.referencies__row {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+//Contact
+.contact {
+  background-color: $color-bg-green-dark;
+}
+.contact__header-title{
+  color:white;
+  margin-bottom: 80px;
+}
+.contact__let, .contact__liam{
+unicode-bidi: bidi-override;
+direction: rtl;
+margin-left: 5px;
+}
+.contact__david{
+  max-height:200px;
+}
+.contact__company{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__company-img{
+  width: 500px;
+  margin-top: 20px;
+}
+.contact__company-text{
+  color: white;
+  margin-top: 40px;
+}
+.contact__company-text:hover, .contact__company-text:visited,
+.contact__let:hover, .contact__liam:hover,
+.contact__let:visited, .contact__liam:visited{
+  color: white;
+  text-decoration: underline;
+}
+
+@include breakpoint-max(md) {
+  .contact__picto {display: none;}
+}
+// Footer
+.footer__text{
+  color: $color-text-dark;
+}  
+.footer__adresse{
+  color: $color-text-dark;
+margin-left: 3%;
+}
+
+// Cookies
+.cookies__video{
+  border:0;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+}
+
+// CGV
+.cgv__link{
+  color: $color-text-dark;
+}
+
+@font-face {
+    font-family: 'AvenirLTStd-Roman';
+    font-weight: 500;
+    font-style: normal;
+    src: local('AvenirLTStd-Roman'), url(./fonts/AvenirLTStd-Roman.otf) format('opentype');
+  }

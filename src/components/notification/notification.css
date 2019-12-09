@@ -1,12 +1,12 @@
 .notification-card{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 60px;
     width: 180px;
     font-family: 'AvenirLTStd-Roman';
     padding: 5px;
-    margin: 85px 5px 10px 10px;
+    margin: 25px 5px 10px 10px;
     line-height: 50px;
     text-align: center;
     font-size: .9em;
