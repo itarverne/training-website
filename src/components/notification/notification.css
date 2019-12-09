@@ -1,0 +1,101 @@
+.notification-card{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 180px;
+    font-family: 'AvenirLTStd-Roman';
+    padding: 5px;
+    margin: 85px 5px 10px 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1em;
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(90,92,92,1);
+    -moz-box-shadow: 0px 3px 20px 0px rgba(90,92,92,1);
+    box-shadow: 0px 3px 20px 0px rgba(90,92,92,1);
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+@-webkit-keyframes slideInRight {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(120%, 0, 0);
+      transform: translate3d(120%, 0, 0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        -webkit-transform: translate3d(120%, 0, 0);
+        transform: translate3d(120%, 0, 0);
+      }
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+  }
+
+  .notification-success {
+    background-color: #0b9952;
+
+  }
+
+  .notification-error{
+    background-color: #df0707;
+
+  }
