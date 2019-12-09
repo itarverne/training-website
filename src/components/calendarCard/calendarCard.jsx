@@ -4,18 +4,6 @@ import React, { Component } from "react";
 import ReactLightCalendar from "@lls/react-light-calendar";
 
 export default class CalendarCard extends Component {
-  constructor(props) {
-    super(props);
-    const date = new Date();
-    const startDate = date.getTime();
-    this.state = {
-      startDate, // Today
-      endDate: new Date(startDate).setDate(date.getDate() + 6) // Today + 6 days
-    };
-  }
-
-  onChange = (startDate, endDate) => this.setState({ startDate, endDate });
-
   DAY_LABELS = [
     "Lundi",
     "Mardi",
@@ -46,9 +34,9 @@ export default class CalendarCard extends Component {
           <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="calendarCard__left">
               <ReactLightCalendar
-                startDate={this.state.startDate}
-                endDate={this.state.endDate}
-                onChange={this.onChange}
+                startDate={this.props.startDate}
+                endDate={this.props.endDate}
+                onChange={this.props.handleDates}
                 range
                 monthLabels={this.MONTH_LABELS}
                 dayLabels={this.DAY_LABELS}
@@ -96,7 +84,10 @@ export default class CalendarCard extends Component {
                   </div>
                 </div>
                 <div className="grid__column padding-nulled grid__column--11--sm grid__column--4--lg">
-                  <div className="calendarCard__submit-btn">
+                  <div
+                    onClick={() => this.props.onSubmit()}
+                    className="calendarCard__submit-btn"
+                  >
                     <a href="#/">demander une formation</a>
                   </div>
                 </div>
