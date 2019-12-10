@@ -7,7 +7,7 @@ import Program from "containers/program/program";
 class App extends Component {
   render() {
     return (
-      <div className="container container--fluid">
+      <div>
         <Training />
         <Trainer />
         <Program />

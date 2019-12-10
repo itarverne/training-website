@@ -3,7 +3,7 @@
     min-height: 100vh;
     background-size: cover;
     font-family: 'AvenirLTStd-Roman';
-
+    position: static;
 }
 
 .training__content{

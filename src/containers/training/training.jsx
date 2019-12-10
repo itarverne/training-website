@@ -3,6 +3,7 @@ import "./training.css";
 import TextContainer from "components/textContainer/textContainer";
 import TrainingCard from "components/trainingCard/trainingCard";
 import BackButton from "components/backButton/backButton";
+import Logo from "images/logo.png";
 
 class Training extends PureComponent {
   cardText =
@@ -12,6 +13,11 @@ class Training extends PureComponent {
   render() {
     return (
       <section id="training" className="content">
+        <img
+          src={Logo}
+          class="hide-gt-sm activities__logo padding-xxs"
+          alt="ITArverne"
+        />
         <a
           href="#body"
           className="nav-button-open"
