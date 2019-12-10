@@ -8,6 +8,8 @@ $color-bg-primary: #378795;
 $color-bg-dark: #387983;
 $color-bg-dark-hight: #154256;
 $color-bg-light: #178095;
+$color-bg-secondary: #D68847;
+
 $color-secondary-light: #D0E6E7;
 $color-gray: #6A93A2;
 $color-text-dark: #1F3C49;
@@ -69,6 +71,7 @@ overflow-y: scroll;
     width: 50vw;
     min-height: 100vh;
   }
+  
   .header__nav-element{
     display: inline-block;
     width: 100%;
@@ -140,6 +143,14 @@ a {
   padding-top: 1em;
   background: $color-bg-primary;
   color: #ddd;
+
+}
+
+.header__nav-formation {
+  padding-top: 1em;
+  background: $color-bg-secondary;
+  color: #ddd;
+
 }
 nav a {
   display: block;

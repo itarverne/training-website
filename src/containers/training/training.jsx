@@ -11,7 +11,17 @@ class Training extends PureComponent {
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse architecto, eligendi ipsa nesciunt quibusdam sit eum excepturi eaque laboriosam corrupti officia, libero mollitia consequuntur doloremque ab laborum vel maiores quaerat Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse architecto, eligendi ipsa nesciunt quibusdam sit eum excepturi eaque laboriosam corrupti officia, libero mollitia consequuntur doloremque ab laborum vel maiores quaerat?";
   render() {
     return (
-      <section id="training">
+      <section id="training" className="content">
+        <a
+          href="#body"
+          className="nav-button-open"
+          aria-label="open navigation"
+        >
+          {" "}
+        </a>
+        <a href="/#" className="nav-button-close" aria-label="close navigation">
+          {" "}
+        </a>
         <div className="training__content">
           <BackButton />
           <TextContainer text={this.textBloc} />
