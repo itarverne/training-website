@@ -103,6 +103,15 @@ class Program extends Component {
     }, 4500);
   };
 
+  initForm = () => {
+    this.setState({
+      choices: ["explication python", "versions python"],
+      firstname: "",
+      lastname: "",
+      phone: ""
+    });
+  };
+
   sendFeedback(templateId, templateParams) {
     window.emailjs
       .send("gmail", templateId, templateParams)
@@ -110,6 +119,7 @@ class Program extends Component {
         this.setState({
           isEmailSent: true
         });
+        this.initForm();
         this.hideNotification();
         console.log("Email successfully sent!", response.status, response.text);
       })
