@@ -55,8 +55,17 @@ overflow-y: scroll;
     background-color: inherit;
 }
 
+.header__logo-training{
+  margin-right: 15%;
+}
+
 .header__nav-element{
     display: inline-block;
+}
+
+.header__title-training {
+  font-family: 'AvenirLTStd-Roman';
+  text-transform: uppercase;
 }
 
 /* small screens styles */

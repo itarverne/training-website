@@ -134,7 +134,7 @@ class Program extends Component {
 
   render() {
     return (
-      <section id="program" className="content">
+      <section id="program">
         {this.state.isEmailSent && (
           <Notification
             className={`notification-success ${
