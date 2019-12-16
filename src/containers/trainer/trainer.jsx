@@ -5,7 +5,7 @@ import TrainerCard from "components/trainerCard/trainerCard";
 class Trainer extends PureComponent {
   render() {
     return (
-      <section id="trainer">
+      <section id="trainer" className="content">
         <TrainerCard />
       </section>
     );

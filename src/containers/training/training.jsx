@@ -3,6 +3,7 @@ import "./training.css";
 import TextContainer from "components/textContainer/textContainer";
 import TrainingCard from "components/trainingCard/trainingCard";
 import BackButton from "components/backButton/backButton";
+import Logo from "images/logo.png";
 
 class Training extends PureComponent {
   cardText =
@@ -11,7 +12,22 @@ class Training extends PureComponent {
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse architecto, eligendi ipsa nesciunt quibusdam sit eum excepturi eaque laboriosam corrupti officia, libero mollitia consequuntur doloremque ab laborum vel maiores quaerat Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse architecto, eligendi ipsa nesciunt quibusdam sit eum excepturi eaque laboriosam corrupti officia, libero mollitia consequuntur doloremque ab laborum vel maiores quaerat?";
   render() {
     return (
-      <section id="training">
+      <section id="training" className="content">
+        <img
+          src={Logo}
+          class="hide-gt-sm activities__logo padding-xxs"
+          alt="ITArverne"
+        />
+        <a
+          href="#body"
+          className="nav-button-open"
+          aria-label="open navigation"
+        >
+          {" "}
+        </a>
+        <a href="/#" className="nav-button-close" aria-label="close navigation">
+          {" "}
+        </a>
         <div className="training__content">
           <BackButton />
           <TextContainer text={this.textBloc} />

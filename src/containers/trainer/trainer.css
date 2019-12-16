@@ -5,4 +5,7 @@
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: 'AvenirLTStd-Roman';
+    position: static;
+
 }

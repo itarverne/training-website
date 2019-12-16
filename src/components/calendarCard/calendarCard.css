@@ -38,7 +38,10 @@
     margin: 3px 0!important;
     background-color: #EFD8C7;
     color: rgb(0, 0, 0);
-
+    padding: 8px 16px;
+    width: 196px;
+    height: 35px;
+    font-size: .95em;
 }
 
 .rlc-calendar {
@@ -79,6 +82,14 @@
     background-color: #D68847;
     
 }
+
+.rlc-day-end-selection:hover, .rlc-day-inside-selection:hover, .rlc-day-selected:hover, .rlc-day-start-selection:hover{
+    background-color: #efd8c7;
+    
+}
+
+
+
 .rlc-day.rlc-day-out-of-month {
     color: #ffffff;
 }

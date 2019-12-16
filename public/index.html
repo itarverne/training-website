@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="g-scroll">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -9,12 +9,10 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link href="styles/tent.min.css" rel="stylesheet">
-
     <link rel="apple-touch-icon" href="logo192.png" />
     <script src="https://kit.fontawesome.com/b9907ca7d9.js" crossorigin="anonymous"></script>
 
-    <!--email service-->
+    <!--emailjs-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script type="text/javascript">
        (function(){
@@ -37,18 +35,79 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body id="body">      
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+        <header class="header g-blur-header">
+          <aside class="header__nav header__nav-formation">
+            <nav id="nav" class="nav-training">
+              <a href="/" class="header__logo header__logo-training"><img src="./images/logo-formation.png" alt="ITArverne"></a>
+              <ul class="header__nav-list">
+                <li class="header__nav-element">
+                  <a href="#training" class="header__title header__title-training">Formation</a>
+                </li>
+                <li class="header__nav-element">
+                  <a href="#trainer" class="header__title header__title-training">Votre formateur</a>
+                </li>
+                <li class="header__nav-element">
+                  <a href="#program" class="header__title header__title-training">Programme</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+        </header>
+      
+      <div id="root"></div>
+      <!--
+        This HTML file is a template.
+        If you open it directly in the browser, you will see an empty page.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
+
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+      <footer class="footer padding-xxs">
+          <div class="grid grid--justify-center grid--center">
+            <div class="grid__column grid__column--2--lg hide-sm">
+              <ul class="list list--unstyled">
+                <li class="list__item"><a href="#activities" class="footer__text">Formation</a></li>
+                <li class="list__item"><a href="#entreprise" class="footer__text">Formateur</a></li>
+                <li class="list__item"><a href="#values" class="footer__text">Programme</a></li>
+              </ul>
+            </div>
+            <div class="grid__column grid__column--3--lg grid__column--6--sm">
+              <a href="https://goo.gl/maps/ynJwNjxFSVyuBpscA" target="_blank" rel="noopener">
+                <div class="vertical-center">
+                  <img src="./images/localisation_brown.png" alt="Localisation">
+                  <span class="footer__adresse">Pépinière Entreprise <br>
+                    3 route de Riom <br>
+                    63530 VOLVIC</span>
+                </div>
+              </a>
+            </div>
+            <div class="grid__column grid__column--3--lg hide-sm">
+              <div class="vertical-center">
+                <img src="./images/logo-copyright.png" alt="ITArverne">
+              </div>
+            </div>
+            <div class="grid__column grid__column--3--lg grid__column--6--sm">
+              <ul class="list list--inline">
+                <li class="list__item"><a href="https://www.linkedin.com/company/itarverne" target="_blank" rel="noopener"><img src="./images/linkedin_brown.png" alt="LinkedIn"></a></li>
+                <li class="list__item"> <a href="https://www.facebook.com/itarverne" target="_blank" rel="noopener"><img src="./images/facebook_brown.png" alt="Facebook"></a></li>
+                <li class="list__item"> <a href="https://twitter.com/itarverne" target="_blank" rel="noopener"><img src="./images/twitter_brown.png" alt="Twitter"></a></li>
+                <li class="list__item"> <a href="#" data-name="david.rigaudie" data-domain="itarverne" data-tld="com" onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld"><img src="./images/mail_brown.png" alt="Email"></a></li>
+                <li class="list__item"><a data-number="06.44.28.80.72" href="#" class="lady-brown" onclick="window.location.href = 'tel:' + this.dataset.number">
+                    <img src="./images/tel-footer_brown.png" alt="Téléphone">
+                  </a>
+                </li>
+              </ul>
+              <div class="js-insert-wonderpush"><span class="footer__text">Build with ❤ by </span> <a class="footer__text" href="https://github.com/itarverne/generator-itarverne-landing-page" target="_blank" rel="noopener">ITArverne</a> 2019</div>
+            </div>
+          </div>
+        </footer>
+    </main>
   </body>
 </html>

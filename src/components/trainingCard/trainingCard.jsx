@@ -14,7 +14,7 @@ class TrainingCard extends PureComponent {
             <p>{this.props.content}</p>
           </div>
           <a
-            href="#"
+            href="/"
             className="button button--outlined button--xxs card__button type-center learn-more-btn"
           >
             en savoir plus
