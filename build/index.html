@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="g-scroll">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <script
+      src="https://kit.fontawesome.com/b9907ca7d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      emailjs.init("user_phFPbNkgXgNw1po7mugBk");
+    </script>
+    <link rel="manifest" href="./manifest.json" />
+    <title>React App</title>
+    <link href="./static/css/2.78af26da.chunk.css" rel="stylesheet" />
+    <link href="./static/css/main.2e1ac9a1.chunk.css" rel="stylesheet" />
+  </head>
+  <body id="body">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <main>
+      <header class="header g-blur-header">
+        <aside class="header__nav header__nav-formation">
+          <nav id="nav" class="nav-training">
+            <a href="/" class="header__logo header__logo-training"
+              ><img src="./images/logo-formation.png" alt="ITArverne"
+            /></a>
+            <ul class="header__nav-list">
+              <li class="header__nav-element">
+                <a href="#training" class="header__title header__title-training"
+                  >Formation</a
+                >
+              </li>
+              <li class="header__nav-element">
+                <a href="#trainer" class="header__title header__title-training"
+                  >Votre formateur</a
+                >
+              </li>
+              <li class="header__nav-element">
+                <a href="#program" class="header__title header__title-training"
+                  >Programme</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </header>
+      <div id="root"></div>
+      <footer class="footer padding-xxs">
+        <div class="grid grid--justify-center grid--center">
+          <div class="grid__column grid__column--2--lg hide-sm">
+            <ul class="list list--unstyled">
+              <li class="list__item">
+                <a href="#training" class="footer__text">Formation</a>
+              </li>
+              <li class="list__item">
+                <a href="#trainer" class="footer__text">Formateur</a>
+              </li>
+              <li class="list__item">
+                <a href="#program" class="footer__text">Programme</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid__column grid__column--3--lg grid__column--6--sm">
+            <a
+              href="https://goo.gl/maps/ynJwNjxFSVyuBpscA"
+              target="_blank"
+              rel="noopener"
+              ><div class="vertical-center">
+                <img src="./images/localisation_brown.png" alt="Localisation" />
+                <span class="footer__adresse"
+                  >Pépinière Entreprise<br />3 route de Riom<br />63530
+                  VOLVIC</span
+                >
+              </div></a
+            >
+          </div>
+          <div class="grid__column grid__column--3--lg hide-sm">
+            <div class="vertical-center">
+              <img src="./images/logo-copyright.png" alt="ITArverne" />
+            </div>
+          </div>
+          <div class="grid__column grid__column--3--lg grid__column--6--sm">
+            <ul class="list list--inline">
+              <li class="list__item">
+                <a
+                  href="https://www.linkedin.com/company/itarverne"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/linkedin_brown.png" alt="LinkedIn"
+                /></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://www.facebook.com/itarverne"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/facebook_brown.png" alt="Facebook"
+                /></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="https://twitter.com/itarverne"
+                  target="_blank"
+                  rel="noopener"
+                  ><img src="./images/twitter_brown.png" alt="Twitter"
+                /></a>
+              </li>
+              <li class="list__item">
+                <a
+                  href="#"
+                  data-name="david.rigaudie"
+                  data-domain="itarverne"
+                  data-tld="com"
+                  onclick='window.location.href="mailto:"+this.dataset.name+"@"+this.dataset.domain+"."+this.dataset.tld'
+                  ><img src="./images/mail_brown.png" alt="Email"
+                /></a>
+              </li>
+              <li class="list__item">
+                <a
+                  data-number="06.44.28.80.72"
+                  href="#"
+                  class="lady-brown"
+                  onclick='window.location.href="tel:"+this.dataset.number'
+                  ><img src="./images/tel-footer_brown.png" alt="Téléphone"
+                /></a>
+              </li>
+            </ul>
+            <div class="js-insert-wonderpush">
+              <span class="footer__text">Build with ❤ by </span
+              ><a
+                class="footer__text"
+                href="https://github.com/itarverne/generator-itarverne-landing-page"
+                target="_blank"
+                rel="noopener"
+                >ITArverne</a
+              >
+              2019
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      !(function(a) {
+        function e(e) {
+          for (
+            var t, r, n = e[0], o = e[1], u = e[2], i = 0, l = [];
+            i < n.length;
+            i++
+          )
+            (r = n[i]),
+              Object.prototype.hasOwnProperty.call(p, r) &&
+                p[r] &&
+                l.push(p[r][0]),
+              (p[r] = 0);
+          for (t in o)
+            Object.prototype.hasOwnProperty.call(o, t) && (a[t] = o[t]);
+          for (s && s(e); l.length; ) l.shift()();
+          return c.push.apply(c, u || []), f();
+        }
+        function f() {
+          for (var e, t = 0; t < c.length; t++) {
+            for (var r = c[t], n = !0, o = 1; o < r.length; o++) {
+              var u = r[o];
+              0 !== p[u] && (n = !1);
+            }
+            n && (c.splice(t--, 1), (e = i((i.s = r[0]))));
+          }
+          return e;
+        }
+        var r = {},
+          p = { 1: 0 },
+          c = [];
+        function i(e) {
+          if (r[e]) return r[e].exports;
+          var t = (r[e] = { i: e, l: !1, exports: {} });
+          return a[e].call(t.exports, t, t.exports, i), (t.l = !0), t.exports;
+        }
+        (i.m = a),
+          (i.c = r),
+          (i.d = function(e, t, r) {
+            i.o(e, t) ||
+              Object.defineProperty(e, t, { enumerable: !0, get: r });
+          }),
+          (i.r = function(e) {
+            "undefined" != typeof Symbol &&
+              Symbol.toStringTag &&
+              Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+              Object.defineProperty(e, "__esModule", { value: !0 });
+          }),
+          (i.t = function(t, e) {
+            if ((1 & e && (t = i(t)), 8 & e)) return t;
+            if (4 & e && "object" == typeof t && t && t.__esModule) return t;
+            var r = Object.create(null);
+            if (
+              (i.r(r),
+              Object.defineProperty(r, "default", { enumerable: !0, value: t }),
+              2 & e && "string" != typeof t)
+            )
+              for (var n in t)
+                i.d(
+                  r,
+                  n,
+                  function(e) {
+                    return t[e];
+                  }.bind(null, n)
+                );
+            return r;
+          }),
+          (i.n = function(e) {
+            var t =
+              e && e.__esModule
+                ? function() {
+                    return e.default;
+                  }
+                : function() {
+                    return e;
+                  };
+            return i.d(t, "a", t), t;
+          }),
+          (i.o = function(e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t);
+          }),
+          (i.p = "/");
+        var t = (this["webpackJsonptraining-website"] =
+            this["webpackJsonptraining-website"] || []),
+          n = t.push.bind(t);
+        (t.push = e), (t = t.slice());
+        for (var o = 0; o < t.length; o++) e(t[o]);
+        var s = n;
+        f();
+      })([]);
+    </script>
+    <script src="./static/js/2.aa607a9c.chunk.js"></script>
+    <script src="./static/js/main.f1c49080.chunk.js"></script>
+  </body>
+</html>

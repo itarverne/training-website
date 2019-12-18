@@ -91,19 +91,11 @@
   }
 
   .notification-success {
-<<<<<<< HEAD
-    background-color: #0b9952;
-=======
     background-color: rgba(11, 153, 82, .82);
->>>>>>> 81d72099ceec30886e1853c675d64055b584c178
 
   }
 
   .notification-error{
-<<<<<<< HEAD
-    background-color: #df0707;
-=======
     background-color: rgba(223, 7, 7, .82);
->>>>>>> 81d72099ceec30886e1853c675d64055b584c178
 
   }
