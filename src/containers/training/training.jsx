@@ -15,7 +15,7 @@ class Training extends PureComponent {
       <section id="training" className="content">
         <img
           src={Logo}
-          class="hide-gt-sm activities__logo padding-xxs"
+          className="hide-gt-sm activities__logo padding-xxs"
           alt="ITArverne"
         />
         <a

@@ -20,7 +20,8 @@ class Program extends Component {
       isEmailSent: false,
       hideNotificationAction: false,
       deliveryFailure: false,
-      isFormInvalid: false
+      isFormInvalid: false,
+      sending: false
     };
   }
 
@@ -49,8 +50,11 @@ class Program extends Component {
         isFormInvalid: true
       });
       this.hideNotification();
-    } else {
-      const templateId = "template_ZfP4MZ6W";
+    } else if (!this.state.sending) {
+      this.setState({
+        sending: true
+      });
+      const templateId = "dde_formation";
       const sDate = new Date(this.state.startDate);
       const eDate = new Date(this.state.endDate);
 
@@ -114,10 +118,11 @@ class Program extends Component {
 
   sendFeedback(templateId, templateParams) {
     window.emailjs
-      .send("gmail", templateId, templateParams)
+      .send("smtp_server", templateId, templateParams)
       .then(response => {
         this.setState({
-          isEmailSent: true
+          isEmailSent: true,
+          sending: false
         });
         this.initForm();
         this.hideNotification();
@@ -125,7 +130,8 @@ class Program extends Component {
       })
       .catch(err => {
         this.setState({
-          deliveryFailure: true
+          deliveryFailure: true,
+          sending: false
         });
         this.hideNotification();
         console.error("Failed, email has not been sent !", err);
@@ -140,7 +146,7 @@ class Program extends Component {
             className={`notification-success ${
               this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
             }`}
-            text={"Email envoyé"}
+            text="Email envoyé"
           />
         )}
         {this.state.deliveryFailure && (
@@ -148,7 +154,7 @@ class Program extends Component {
             className={`notification-error ${
               this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
             }`}
-            text={"Email non envoyé !"}
+            text="Email non envoyé !"
           />
         )}
         {this.state.isFormInvalid && (
@@ -156,7 +162,7 @@ class Program extends Component {
             className={`notification-error ${
               this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
             }`}
-            text={"Formulaire non valide"}
+            text="Formulaire non valide"
           />
         )}
         <TrainingDetailsCard />
