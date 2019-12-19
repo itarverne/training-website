@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.27d94696.chunk.css",
+    "main.css": "/static/css/main.4a3d16e4.chunk.css",
     "main.js": "/static/js/main.c07c7c32.chunk.js",
     "main.js.map": "/static/js/main.c07c7c32.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67ea0481.js",
@@ -9,13 +9,13 @@
     "static/js/2.aa607a9c.chunk.js": "/static/js/2.aa607a9c.chunk.js",
     "static/js/2.aa607a9c.chunk.js.map": "/static/js/2.aa607a9c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b9faec2382b58d95cb2492ac027ad891.js": "/precache-manifest.b9faec2382b58d95cb2492ac027ad891.js",
+    "precache-manifest.8b2002af514d0e380325cbddb220d931.js": "/precache-manifest.8b2002af514d0e380325cbddb220d931.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.78af26da.chunk.css.map": "/static/css/2.78af26da.chunk.css.map",
-    "static/css/main.27d94696.chunk.css.map": "/static/css/main.27d94696.chunk.css.map",
+    "static/css/main.4a3d16e4.chunk.css.map": "/static/css/main.4a3d16e4.chunk.css.map",
     "static/media/App.scss": "/static/media/AvenirLTStd-Roman.9c62dd0a.otf",
-    "static/media/trainerCard.css": "/static/media/david.3437b526.png",
-    "static/media/trainer.css": "/static/media/fond-formateur.0fbc72c9.jpg",
+    "static/media/trainerCard.css": "/static/media/david.c683ad71.png",
+    "static/media/trainer.css": "/static/media/fond-formateur.a7d7e46f.jpg",
     "static/media/training.css": "/static/media/fond-formation.0c77af4f.jpg",
     "static/media/program.css": "/static/media/fond-prog.c490058e.jpg"
   },
@@ -23,7 +23,7 @@
     "static/js/runtime-main.67ea0481.js",
     "static/css/2.78af26da.chunk.css",
     "static/js/2.aa607a9c.chunk.js",
-    "static/css/main.27d94696.chunk.css",
+    "static/css/main.4a3d16e4.chunk.css",
     "static/js/main.c07c7c32.chunk.js"
   ]
 }
