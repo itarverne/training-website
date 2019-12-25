@@ -36,12 +36,12 @@
 
 .calendarCard-formular__form-block input{
     margin: 3px 0!important;
-    background-color: #EFD8C7;
-    color: rgb(0, 0, 0);
-    padding: 8px 16px;
-    width: 196px;
+    background-color: #EFD8C7 !important;
+    color: rgb(0, 0, 0) !important;
+    padding: 8px 16px !important;
+    width: 196px !important;
     height: 35px;
-    font-size: .95em;
+    font-size: .95em !important;
 }
 
 .rlc-calendar {
@@ -123,6 +123,9 @@
     font-size: 1.3em;
     font-weight: bolder;
 
+}
+.calendarCard__submit-btn a:hover {
+    color: #ffffff;
 }
 
 .calendarCard__submit-btn:hover {

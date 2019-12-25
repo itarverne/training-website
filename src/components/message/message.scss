@@ -1,0 +1,74 @@
+@import "../../App.scss";
+
+.message-box--right {
+  flex-direction: row-reverse;
+}
+
+.message-box {
+  margin-top: 10px !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: 'AvenirLTStd-Roman';
+
+  .message-box__avatar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 3px;
+    background: #fff;
+
+    @include shadowCard($shadow-color, box-shadow, webkit);
+    i {
+      margin: 0;
+      color: #1b718b;
+      font-size: 1.3em;
+    }
+  }
+}
+
+.chatMessage{
+  padding: 6px;
+  margin: 0;
+  width: 200px !important;
+  background: #fff;
+  font-size: .91em;
+  border-radius: 5px;
+
+  @include shadowCard($chat-shadow-color, box-shadow, webkit);
+
+  .chatMessage__content {
+    .chatMessage__content-header {
+      font-size: .95em;
+      font-weight: bold !important;
+      color: $light-black;
+      .message-date {
+          color: $milk;
+          font-size: $tiny-font-size;
+          padding-left: 5px;
+          font-weight: 900;
+      }
+    }
+
+    span {
+      font-size: $message-font-size;
+      margin: 0;
+      color: $light-black;
+      text-align: left;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+
+    p {
+      font-size: $message-font-size;
+      margin: 0;
+      color: $light-black;
+      text-align: left;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+  }
+}

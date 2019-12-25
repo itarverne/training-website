@@ -11,7 +11,7 @@
 }
 
 .training__grid{
-    padding-top: 67px;
+    padding-top: 67px !important;
     width: 90%;
     margin: auto;
 }

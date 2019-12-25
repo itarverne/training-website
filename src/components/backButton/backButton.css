@@ -16,3 +16,7 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.back-button a:hover {
+    color: #ffffff;
+}

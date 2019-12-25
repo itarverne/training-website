@@ -38,7 +38,7 @@
     text-transform: uppercase;
     color: #ffffff;
     font-size: 14px;
-    margin: 15px;
+    margin: 15px !important;
 }
 
 .learn-more-btn.button:hover{

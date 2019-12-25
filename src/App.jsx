@@ -3,6 +3,7 @@ import "./App.scss";
 import Training from "containers/training/training";
 import Trainer from "containers/trainer/trainer";
 import Program from "containers/program/program";
+import Chat from "components/chat/chat";
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
         <Training />
         <Trainer />
         <Program />
+        <Chat />
       </div>
     );
   }
