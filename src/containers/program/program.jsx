@@ -54,7 +54,7 @@ class Program extends Component {
       this.setState({
         sending: true
       });
-      const templateId = "dde_formation";
+      const templateId = process.env.REACT_APP_EMAILJS_TEMP_ID;
       const sDate = new Date(this.state.startDate);
       const eDate = new Date(this.state.endDate);
 
