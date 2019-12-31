@@ -1,6 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable no-process-env */
-/* eslint-disable no-underscore-dangle */
 import "./chat.scss";
 import { Bounce, Fade } from "react-reveal";
 import React, { Component } from "react";
@@ -94,7 +92,8 @@ class Chat extends Component {
     const conversationMessages = _ld.dropRight(convMessages, 2);
 
     const cleanMessages = _ld.map(conversationMessages, item => {
-      const isAdmin = item.msg.sender.username !== `gci_bot_test_cov`;
+      const isAdmin =
+        item.msg.sender.username !== process.env.REACT_APP_KB_BOT_NAME;
       if (item.msg.content.type !== `text`) {
         return null;
       }
@@ -102,7 +101,7 @@ class Chat extends Component {
         id: item.msg.id,
         content: item.msg.content.text.body,
         date: item.msg.sent_at_ms,
-        username: isAdmin ? "Support" : "Anonymous",
+        username: isAdmin ? "Support" : this.props.username,
         admin: isAdmin,
         unread: item.msg.unread
       };
@@ -130,8 +129,7 @@ class Chat extends Component {
       const newUserId = Math.floor(Math.random() * 1000000000);
       document.cookie = `userId=${newUserId}; expires=Fri, 3 Aug 2100 20:47:11 UTC; path=/`;
     }
-    // return this.getCookie("userId");
-    return "u_tayson";
+    return this.getCookie("userId");
   };
 
   getNotification = () => {
@@ -175,7 +173,7 @@ class Chat extends Component {
       const message = {
         content: this.input.value,
         date: new Date().toString(),
-        username: "Anonymous",
+        username: this.props.username,
         id: Math.floor(Math.random() * 1000000000)
       };
       this.setState(prevSatate => ({
@@ -197,7 +195,7 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className="chat">
+      <div className="chat hide">
         {this.state.chatIsOpen && (
           <Bounce bottom>
             <div className="chat__box">
@@ -241,9 +239,13 @@ class Chat extends Component {
                 </a>
                 <div className="chat__identity">
                   <div className="chat__user-icon">
-                    <i className="fas fa-user-secret" />
+                    <i
+                      className={`fas fa-user${
+                        this.props.username === "anonymous" ? `-secret` : ``
+                      }`}
+                    />
                   </div>
-                  <span className="chat__username">Anonymous</span>
+                  <span className="chat__username">{this.props.username}</span>
                 </div>
               </div>
             </div>
