@@ -5,6 +5,7 @@
     color: #43454D;
     font-size: 14px;
     margin: 5px auto;
+    height: 306px;
 }
 
 .card-tiltle-wrapper{
@@ -24,6 +25,7 @@
 .card-content-wrapper{
     padding: 10px;
     text-align: left;
+    height: 174px;
 
 }
 
