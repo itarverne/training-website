@@ -7,9 +7,9 @@ import Logo from "images/logo.png";
 
 class Training extends PureComponent {
   python =
-    "Python est devenu le langage le plus populaire auprès des développeurs, au travers d'une richesse de librairies et une simplicité d'utilisation. Faites-vous accompagner pour maitriser ce langage de programmation";
+    "Python est devenu le langage le plus populaire auprès des développeurs, au travers d'une richesse de librairies et une simplicité d'utilisation. Faites-vous accompagner pour maitriser ce langage de programmation.";
   django =
-    "Vous avez quelques bases en python et vous avez envi de réaliser des applications web, le framework Django est un des outils les plus utilisés. Participez à notre atelier pour découvrir la réalisation d'application web python";
+    "Vous avez quelques bases en python et vous avez envie de réaliser des applications web, le framework Django est un des outils les plus utilisés. Participez à notre atelier pour découvrir la réalisation d'application web python.";
   fullstack =
     "En tant que développeur vous devez maitriser tous les aspects de la programmation, aussi bien le front-end que le back-end. Cette formation est faite pour les personnes voulant maitriser de bout en bout le cycle de développement d'une application.";
   textBloc =

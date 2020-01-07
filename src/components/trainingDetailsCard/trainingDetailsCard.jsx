@@ -14,7 +14,7 @@ class TrainingDetailsCard extends PureComponent {
                   (Re)découvrez ce langage de programmation qui est très utilisé
                   dans le cadre scientifique compte tenu des outils avancés
                   qu'il dispose. Nous verrons durant cette formation tous les
-                  aspects nécessaires à une bonne maitrise de python
+                  aspects nécessaires à une bonne maitrise de python.
                 </div>
               </div>
               <div className="trainingDetailsCard__square trainingDetailsCard__square-period">
@@ -39,11 +39,13 @@ class TrainingDetailsCard extends PureComponent {
                 <div className="trainingDetailsCard__square-content">
                   <ul>
                     <li>
-                      Comprendre et être capable de modifier un code python
+                      Comprendre et être capable de modifier un code python.
                     </li>
-                    <li>Créer une nouvelle application python</li>
-                    <li>Connaitre les outils qui gravitent autour de python</li>
-                    <li>Être capable de comprendre des notions avancés</li>
+                    <li>Créer une nouvelle application python.</li>
+                    <li>
+                      Connaitre les outils qui gravitent autour de python.
+                    </li>
+                    <li>Être capable de comprendre des notions avancés.</li>
                   </ul>
                 </div>
               </div>

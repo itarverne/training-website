@@ -43,7 +43,6 @@
 .programCard__elements {
     background-color: transparent;
     font-family: 'AvenirLTStd-Roman';
-    text-transform: capitalize;
     color: #ffffff;
     font-size: .85em;
     font-weight: bolder;
