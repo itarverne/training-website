@@ -4,10 +4,10 @@ import { Bounce, Fade } from "react-reveal";
 import React, { Component } from "react";
 import Message from "components/message/message";
 import _ld from "lodash";
-// import io from "socket.io-client";
+import io from "socket.io-client";
 
-// const ENDPOINT = process.env.REACT_APP_CHAT_API;
-// let socket = io(ENDPOINT);
+const ENDPOINT = process.env.REACT_APP_CHAT_API;
+let socket = io(ENDPOINT);
 
 class Chat extends Component {
   constructor(props) {
@@ -29,57 +29,57 @@ class Chat extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   this._isMounted = true;
+  componentDidMount() {
+    this._isMounted = true;
 
-  //   this.scrollToBottom();
+    this.scrollToBottom();
 
-  //   const userId = this.getUserId();
+    const userId = this.getUserId();
 
-  //   socket.emit("join", { userId }, () => {
-  //     console.log("channel joinned");
-  //   });
+    socket.emit("join", { userId }, () => {
+      console.log("channel joinned");
+    });
 
-  //   socket.on(`kb_user_conversation`, conv => {
-  //     if (conv.result) {
-  //       this.getUserConversation(conv.result.messages);
-  //     }
-  //   });
+    socket.on(`kb_user_conversation`, conv => {
+      if (conv.result) {
+        this.getUserConversation(conv.result.messages);
+      }
+    });
 
-  //   this.getNotification();
+    this.getNotification();
 
-  //   socket.on(`support_message`, msg => {
-  //     if (!this.state.chatIsOpen) {
-  //       this.setState({
-  //         chatNotification: true
-  //       });
-  //       localStorage.unReadMessage = true;
-  //     }
-  //     console.log("support msg received");
-  //     this.setState(prevState => ({
-  //       messages: [
-  //         ...prevState.messages,
-  //         {
-  //           content: msg.content,
-  //           username: `Support`,
-  //           admin: true,
-  //           date: msg.date,
-  //           id: msg.id
-  //         }
-  //       ]
-  //     }));
-  //   });
-  // }
+    socket.on(`support_message`, msg => {
+      if (!this.state.chatIsOpen) {
+        this.setState({
+          chatNotification: true
+        });
+        localStorage.unReadMessage = true;
+      }
+      console.log("support msg received");
+      this.setState(prevState => ({
+        messages: [
+          ...prevState.messages,
+          {
+            content: msg.content,
+            username: `Support`,
+            admin: true,
+            date: msg.date,
+            id: msg.id
+          }
+        ]
+      }));
+    });
+  }
 
-  // componentDidUpdate() {
-  //   this.scrollToBottom();
-  // }
+  componentDidUpdate() {
+    this.scrollToBottom();
+  }
 
-  // componentWillUnmount() {
-  //   this._isMounted = false;
-  //   socket.emit(`disconnect`);
-  //   socket.off();
-  // }
+  componentWillUnmount() {
+    this._isMounted = false;
+    socket.emit(`disconnect`);
+    socket.off();
+  }
 
   _isMounted = true;
 
@@ -129,7 +129,8 @@ class Chat extends Component {
       const newUserId = Math.floor(Math.random() * 1000000000);
       document.cookie = `userId=${newUserId}; expires=Fri, 3 Aug 2100 20:47:11 UTC; path=/`;
     }
-    return this.getCookie("userId");
+    // return this.getCookie("userId");
+    return "u_tayson";
   };
 
   getNotification = () => {
@@ -167,25 +168,25 @@ class Chat extends Component {
     }));
   };
 
-  // handleMessage = e => {
-  //   if (e) e.preventDefault();
-  //   if (this.state.inputValue) {
-  //     const message = {
-  //       content: this.input.value,
-  //       date: new Date().toString(),
-  //       username: this.props.username,
-  //       id: Math.floor(Math.random() * 1000000000)
-  //     };
-  //     this.setState(prevSatate => ({
-  //       messages: [...prevSatate.messages, message],
-  //       inputValue: ``
-  //     }));
-  //     socket.emit(`message`, {
-  //       channel: this.getUserId(),
-  //       message: message.content
-  //     });
-  //   }
-  // };
+  handleMessage = e => {
+    if (e) e.preventDefault();
+    if (this.state.inputValue) {
+      const message = {
+        content: this.input.value,
+        date: new Date().toString(),
+        username: this.props.username,
+        id: Math.floor(Math.random() * 1000000000)
+      };
+      this.setState(prevSatate => ({
+        messages: [...prevSatate.messages, message],
+        inputValue: ``
+      }));
+      socket.emit(`message`, {
+        channel: this.getUserId(),
+        message: message.content
+      });
+    }
+  };
 
   handleInputValue = event => {
     this.setState({
@@ -195,7 +196,7 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className="chat hide">
+      <div className="chat">
         {this.state.chatIsOpen && (
           <Bounce bottom>
             <div className="chat__box">
