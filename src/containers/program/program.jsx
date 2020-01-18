@@ -46,9 +46,14 @@ class Program extends Component {
 
   handleRequest = () => {
     if (!this.state.lastname || !this.state.firstname || !this.state.phone) {
+      // Reset running timeout & notif state
+      this.resetNotification();
+
+      // Run new notif
       this.setState({
         isFormInvalid: true
       });
+
       this.hideNotification();
     } else if (!this.state.sending) {
       this.setState({
@@ -93,11 +98,22 @@ class Program extends Component {
 
   handleDates = (startDate, endDate) => this.setState({ startDate, endDate });
 
+  resetNotification = () => {
+    window.clearTimeout(this.hideNotif);
+    window.clearTimeout(this.resetNotif);
+    this.setState({
+      isEmailSent: false,
+      deliveryFailure: false,
+      isFormInvalid: false,
+      hideNotificationAction: false
+    });
+  };
+
   hideNotification = () => {
-    setTimeout(() => {
+    this.hideNotif = setTimeout(() => {
       this.setState({ hideNotificationAction: true });
     }, 3000);
-    setTimeout(() => {
+    this.resetNotif = setTimeout(() => {
       this.setState({
         isEmailSent: false,
         deliveryFailure: false,
