@@ -4,17 +4,20 @@ import Training from "containers/training/training";
 import Trainer from "containers/trainer/trainer";
 import Program from "containers/program/program";
 import Chat from "components/chat/chat";
-import { IntlProvider } from "react-intl";
+import Header from "components/header/header";
+import Footer from "components/footer/footer";
 
 class App extends Component {
   render() {
     return (
-      <IntlProvider locale="en">
+      <div>
+        <Header />
         <Training />
         <Trainer />
         <Program />
+        <Footer />
         <Chat username="anonymous" />
-      </IntlProvider>
+      </div>
     );
   }
 }

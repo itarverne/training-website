@@ -77,9 +77,11 @@ overflow-y: scroll;
 }
 
 .header__nav-img {
-  img {
-    height: 60px;
-    width: 180px;
+  a {
+    height: 58px;
+    max-width: 180px;
+    padding: 0;
+    background-color: transparent;
   }
   float: right;
   line-height: 94px;
@@ -99,9 +101,9 @@ overflow-y: scroll;
   .header__nav-img {
     margin-left: -7px;
 
-    img {
+    a {
       height: 50px;
-      width: 130px;
+      width: 143px;
 
     }
   }
@@ -139,10 +141,15 @@ overflow-y: scroll;
     display: inline-block;
     float: inherit;
     line-height: inherit;
-    img {
+    a{
       height: 50px;
-      width: 17Opx;
-      margin-left: -35px;
+      width: 13Opx;
+    }
+    img {
+      margin-left: -41px;
+      height: 50px;
+      width: 190px;
+
     }
   }
   .content {

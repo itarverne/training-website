@@ -45,7 +45,7 @@
 }
 
 .rlc-calendar {
-    max-width: 360px;
+    max-width: 350px;
     width: auto;
     border: 0;
     box-shadow: none;
@@ -72,9 +72,20 @@
     font-size: .96em;
 }
 
+.rlc-calendar .rlc-days-label .rlc-day-label
+{
+    margin: auto 5px;
+}
+
 .rlc-calendar .rlc-days
 {
     font-size: .96em;
+}
+
+.rlc-calendar .rlc-days .rlc-day
+{
+    width: 50px;
+    height: 50px;
 }
 
 
