@@ -6,7 +6,7 @@ class TrainingDetailsCard extends PureComponent {
     return (
       <div className="trainingDetailsCard">
         <div className="grid grid--justify-center trainingDetailsCard__grid">
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column padding-nulled grid__column--12--sm grid__column--11--md grid__column--10--lg">
             <div className="trainingDetailsCard__left">
               <div className="trainingDetailsCard__square trainingDetailsCard__square-lang">
                 <div className="trainingDetailsCard__square-title">python</div>
@@ -15,6 +15,16 @@ class TrainingDetailsCard extends PureComponent {
                   dans le cadre scientifique compte tenu des outils avancés
                   qu'il dispose. Nous verrons durant cette formation tous les
                   aspects nécessaires à une bonne maitrise de python.
+                </div>
+              </div>
+              <div className="trainingDetailsCard__square trainingDetailsCard__square-public">
+                <div className="trainingDetailsCard__square-title">Public</div>
+                <div className="trainingDetailsCard__square-content">
+                  <ul>
+                    <li>Une équipe de développeurs.</li>
+                    <li>Un responsable technique.</li>
+                    <li>Une personne en reconversion profesionnelle.</li>
+                  </ul>
                 </div>
               </div>
               <div className="trainingDetailsCard__square trainingDetailsCard__square-period">
@@ -27,10 +37,13 @@ class TrainingDetailsCard extends PureComponent {
                 <div className="trainingDetailsCard__square-period-text-3">
                   au vendredi
                 </div>
+                <div className="trainingDetailsCard__square-period-text-4">
+                  7h / jour
+                </div>
               </div>
             </div>
           </div>
-          <div className="grid__column padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
+          <div className="grid__column padding-nulled grid__column--12--sm grid__column--11--md grid__column--10--lg">
             <div className="trainingDetailsCard__right">
               <div className="trainingDetailsCard__square trainingDetailsCard__square-obj">
                 <div className="trainingDetailsCard__square-title">
@@ -47,6 +60,15 @@ class TrainingDetailsCard extends PureComponent {
                     </li>
                     <li>Être capable de comprendre des notions avancés.</li>
                   </ul>
+                </div>
+              </div>
+              <div className="trainingDetailsCard__square trainingDetailsCard__square-satisfaction">
+                <div className="trainingDetailsCard__square-title">
+                  Satisfaction
+                </div>
+                <div className="trainingDetailsCard__square-content">
+                  <span> 87% </span>des clients sont satisfaits par la qualité
+                  de nos formations.
                 </div>
               </div>
               <div className="trainingDetailsCard__square trainingDetailsCard__square-requirements">

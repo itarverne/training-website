@@ -77,6 +77,17 @@
 
 }
 
+.trainingDetailsCard__square-period-text-4{
+    font-family: 'AvenirLTStd-Roman';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
 .trainingDetailsCard__square.trainingDetailsCard__square-obj{
     background-color: #C19470;
     background-image: url('../../images/objectif.png');
@@ -84,10 +95,35 @@
     background-repeat: no-repeat;
 }
 
+.trainingDetailsCard__square.trainingDetailsCard__square-obj:hover{
+    background-color: rgb(116, 76, 44);
+    background-image: none;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-public{
+    background-color: rgb(85, 38, 0);
+    background-image: url('../../images/public.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-satisfaction{
+    background-color: rgb(92, 67, 46);
+    background-image: url('../../images/satisfaction.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-satisfaction .trainingDetailsCard__square-content span{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
 .trainingDetailsCard__square.trainingDetailsCard__square-requirements{
     background-color: #6A93A2;
     background-image: url('../../images/prequis.png');
-    background-position: center;
+    background-position: contain;
     background-size: cover;
 
 }
