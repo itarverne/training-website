@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "441a14f111e4ba31b6b48812ef3aa599",
+    "revision": "ac2c40a123810d2facb9886b8cc171c5",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.78af26da.chunk.css"
   },
   {
-    "revision": "bfd38b8a5507368c2921",
-    "url": "/static/css/main.d4b37ced.chunk.css"
+    "revision": "92dd5a2048b58e759419",
+    "url": "/static/css/main.a4867d3e.chunk.css"
   },
   {
     "revision": "6d6580b993aebd7854a2",
     "url": "/static/js/2.c3aeab50.chunk.js"
   },
   {
-    "revision": "bfd38b8a5507368c2921",
-    "url": "/static/js/main.f8184010.chunk.js"
+    "revision": "92dd5a2048b58e759419",
+    "url": "/static/js/main.7c156476.chunk.js"
   },
   {
     "revision": "0e451aa53afc3ef70664",
@@ -42,5 +42,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c490058ed842b96dc925f47a536deb2a",
     "url": "/static/media/fond-prog.c490058e.jpg"
+  },
+  {
+    "revision": "633160fd39d817621f5d6c16b030a867",
+    "url": "/static/media/public.633160fd.svg"
+  },
+  {
+    "revision": "b69f03c0ac18cddaff647dd8955b8064",
+    "url": "/static/media/satisfaction.b69f03c0.svg"
   }
 ]);
