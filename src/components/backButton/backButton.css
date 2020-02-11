@@ -6,6 +6,7 @@
     margin-bottom: 10px;
     position: fixed;
     margin-left: -2rem;
+    z-index: 1;
 }
 
 .back-button a {

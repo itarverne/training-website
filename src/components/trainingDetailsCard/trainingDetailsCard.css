@@ -1,5 +1,5 @@
 .trainingDetailsCard{
-    padding-top: 154px;
+    padding: 60px;
 }
 
 
@@ -8,16 +8,9 @@
 }
 
 
-.trainingDetailsCard__left, .trainingDetailsCard__right{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 100%;
-}
-
 .trainingDetailsCard__square{
-    width: 50%;
-    height: 100%;
+    width: 100%;
+    height: 360px;
     padding: 15px;
 }
 
@@ -37,6 +30,7 @@
     font-family: 'AvenirLTStd-Roman';
     color: #ffffff;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .trainingDetailsCard__square.trainingDetailsCard__square-period{
@@ -93,11 +87,7 @@
     background-image: url('../../images/objectif.png');
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.trainingDetailsCard__square.trainingDetailsCard__square-obj:hover{
-    background-color: rgb(116, 76, 44);
-    background-image: none;
+    background-size: contain;
 }
 
 .trainingDetailsCard__square.trainingDetailsCard__square-public{
@@ -114,16 +104,25 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+
 }
 
 .trainingDetailsCard__square.trainingDetailsCard__square-satisfaction .trainingDetailsCard__square-content span{
-    font-size: 1.4em;
+    font-size: 1.6em;
     font-weight: bolder;
+    color: rgb(0, 255, 157);
 }
 .trainingDetailsCard__square.trainingDetailsCard__square-requirements{
-    background-color: #6A93A2;
+    background-color: #ca8b61;
     background-image: url('../../images/prequis.png');
-    background-position: contain;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trainingDetailsCard__square.trainingDetailsCard__square-requirements:hover, .trainingDetailsCard__square.trainingDetailsCard__square-satisfaction:hover, .trainingDetailsCard__square.trainingDetailsCard__square-obj:hover, .trainingDetailsCard__square.trainingDetailsCard__square-public:hover
+, .trainingDetailsCard__square.trainingDetailsCard__square-period:hover, .trainingDetailsCard__square.trainingDetailsCard__square-lang:hover {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
 
 }
