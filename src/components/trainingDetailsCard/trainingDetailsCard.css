@@ -1,5 +1,7 @@
 .trainingDetailsCard{
     padding: 60px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 
@@ -10,7 +12,7 @@
 
 .trainingDetailsCard__square{
     width: 100%;
-    height: 360px;
+    height: 300px;
     padding: 15px;
 }
 
@@ -30,7 +32,6 @@
     font-family: 'AvenirLTStd-Roman';
     color: #ffffff;
     font-size: 16px;
-    font-weight: bold;
 }
 
 .trainingDetailsCard__square.trainingDetailsCard__square-period{

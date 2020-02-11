@@ -6,7 +6,7 @@ class TrainingDetailsCard extends PureComponent {
     return (
       <div className="trainingDetailsCard">
         <div className="grid grid--justify-center trainingDetailsCard__grid ">
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-lang">
               <div className="trainingDetailsCard__square-title">python</div>
               <div className="trainingDetailsCard__square-content">
@@ -17,7 +17,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-public">
               <div className="trainingDetailsCard__square-title">Public</div>
               <div className="trainingDetailsCard__square-content">
@@ -29,7 +29,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-period">
               <div className="trainingDetailsCard__square-period-text-1">
                 5 jours
@@ -45,7 +45,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-obj">
               <div className="trainingDetailsCard__square-title">objectifs</div>
               <div className="trainingDetailsCard__square-content">
@@ -60,7 +60,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-satisfaction">
               <div className="trainingDetailsCard__square-title">
                 Satisfaction client
@@ -71,7 +71,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
             </div>
           </div>
-          <div className="grid__column--12 padding-nulled grid__column--6--sm grid__column--6--md grid__column--4--lg">
+          <div className="grid__column--12 padding-nulled grid__column--8--sm grid__column--6--md grid__column--4--lg">
             <div className="trainingDetailsCard__square trainingDetailsCard__square-requirements">
               <div className="trainingDetailsCard__square-title">
                 pré requis
