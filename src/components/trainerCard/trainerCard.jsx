@@ -21,10 +21,10 @@ class TrainerCard extends Component {
                   langages de programmation et a choisi de se spécialiser en
                   python. Compte tenu de ses expériences variées dans différents
                   domaines d'activités, il sait s'adapter à vos besoins et
-                  trouvera la solution adéquate à votre problématique. Les
-                  services docker, l'usage des interfaces REST, l'optimisation
-                  pour les navigateurs ou encore la sécurité n'ont plus de
-                  secret pour lui.
+                  trouvera la solution adéquate à votre problématique. En plus
+                  d'être formateur python, les services docker, l'usage des
+                  interfaces REST, l'optimisation pour les navigateurs ou encore
+                  la sécurité n'ont plus de secret pour lui.
                 </div>
                 {/* <div className="trainerCard__text-title">activites</div>
                 <div className="trainerCard__text-content">

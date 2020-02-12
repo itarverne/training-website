@@ -13,7 +13,7 @@ class TrainingDetailsCard extends PureComponent {
                 (Re)découvrez ce langage de programmation qui est très utilisé
                 dans le cadre scientifique compte tenu des outils avancés qu'il
                 dispose. Nous verrons durant cette formation tous les aspects
-                nécessaires à une bonne maitrise de python.
+                nécessaires à une bonne maitrise du langage python.
               </div>
             </div>
           </div>
@@ -53,9 +53,11 @@ class TrainingDetailsCard extends PureComponent {
                   <li>
                     Comprendre et être capable de modifier un code python.
                   </li>
-                  <li>Créer une nouvelle application python.</li>
-                  <li>Connaitre les outils qui gravitent autour de python.</li>
-                  <li>Être capable de comprendre des notions avancés.</li>
+                  <li>Apprendre à créer une application python.</li>
+                  <li>
+                    Connaitre les outils qui gravitent autour du langage python.
+                  </li>
+                  <li>Comprendre des notions avancés de python.</li>
                 </ul>
               </div>
             </div>
@@ -67,7 +69,7 @@ class TrainingDetailsCard extends PureComponent {
               </div>
               <div className="trainingDetailsCard__square-content">
                 <span> 87%</span> de nos clients sont satisfaits par la qualité
-                de nos formations.
+                de nos formations python.
               </div>
             </div>
           </div>
@@ -77,8 +79,8 @@ class TrainingDetailsCard extends PureComponent {
                 pré requis
               </div>
               <div className="trainingDetailsCard__square-content">
-                Avoir déjà les bases en développement pas forcément en python.
-                Les formations sont à la carte mais entre 1 et 2 ans
+                Avoir déjà les bases en développement python ou dans un autre
+                langage. Les formations sont à la carte mais entre 1 et 2 ans
                 d'expérience est conseillé.
               </div>
             </div>

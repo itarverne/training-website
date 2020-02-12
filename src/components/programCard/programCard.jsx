@@ -5,7 +5,7 @@ class ProgramCard extends PureComponent {
   dictionary = {
     left: [
       {
-        title: "explication python",
+        title: "explications sur le langage python",
         elements: [
           "Histoire",
           "Futurs perspectives du langage",
@@ -39,7 +39,7 @@ class ProgramCard extends PureComponent {
         ]
       },
       {
-        title: "les bases en python",
+        title: "les bases en programmation python",
         elements: [
           "Ligne directrice python",
           "Normes de codage",
