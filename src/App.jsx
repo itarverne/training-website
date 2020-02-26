@@ -1,23 +1,29 @@
 import React, { Component } from "react";
 import "./App.scss";
-import Training from "containers/training/training";
-import Trainer from "containers/trainer/trainer";
-import Program from "containers/program/program";
+import Home from "containers/home/home";
+import ProgramContent from "containers/programContent/programContent";
 import Chat from "components/chat/chat";
-import Header from "components/header/header";
-import Footer from "components/footer/footer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <Training />
-        <Trainer />
-        <Program />
-        <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/python">
+            <ProgramContent subject="python" />
+          </Route>
+
+          <Route exact path="/docker">
+            <ProgramContent subject="docker" />
+          </Route>
+        </Switch>
         <Chat username="anonymous" />
-      </div>
+      </Router>
     );
   }
 }

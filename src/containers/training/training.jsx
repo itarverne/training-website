@@ -10,8 +10,6 @@ class Training extends PureComponent {
     "Python est devenu le langage le plus populaire auprès des développeurs, au travers d'une richesse de librairies et une simplicité d'utilisation. Faites-vous accompagner pour apprendre à programmer en python et maitriser ce langage de programmation.";
   django =
     "Vous avez quelques bases en python et vous avez envie de réaliser des applications web, le framework Django est un des outils les plus utilisés. Suivez notre formation django et participez à notre atelier pour découvrir la réalisation d'application web python.";
-  fullstack =
-    "En tant que développeur vous devez maitriser tous les aspects de la programmation, aussi bien le front-end que le back-end. Cette formation est faite pour les personnes voulant maitriser de bout en bout le cycle de développement d'une application.";
   textBloc =
     "ITARVERNE est votre partenaire idéal pour vous accompagner dans la formation de vos équipes de développeurs. Notre expertise dans le domaine du développement web et plus particulièrement le python, est mis à votre service afin de réaliser des formations / cours Python sur mesure. Que ce soit pour la découverte du framework python Django ou encore un perfectionnement dans l'usage du langage python.";
   render() {
@@ -43,7 +41,7 @@ class Training extends PureComponent {
               <TrainingCard title="django" content={this.django} />
             </div>
             <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
-              <TrainingCard title="fullstack" content={this.fullstack} />
+              <TrainingCard title="docker" content={this.python} />
             </div>
           </div>
         </div>

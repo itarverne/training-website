@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import TelLogo from "../../images/tel.svg";
 
 export default class Header extends Component {
   tel = "06.44.28.80.72";
@@ -38,7 +39,7 @@ export default class Header extends Component {
             </ul>
             <div className="header__nav-img">
               <a href={`tel:${this.tel}`}>
-                <img src="../../images/tel.png" alt="ITArverne" />
+                <img src={TelLogo} alt="ITArverne" />
               </a>
             </div>
           </nav>

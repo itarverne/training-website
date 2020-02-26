@@ -1,201 +1,34 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import "./program.css";
-import TrainingDetailsCard from "components/trainingDetailsCard/trainingDetailsCard";
-import ProgramCard from "components/programCard/programCard";
-import CalendarCard from "components/calendarCard/calendarCard";
-import Notification from "components/notification/notification";
+import { Link } from "react-router-dom";
 
-class Program extends Component {
-  constructor(props) {
-    super(props);
-    const date = new Date();
-    const startDate = date.getTime();
-    this.state = {
-      choices: ["explication python", "versions python"],
-      firstname: "",
-      lastname: "",
-      phone: "",
-      startDate, // Today
-      endDate: new Date(startDate).setDate(date.getDate() + 6), // Today + 6 days
-      isEmailSent: false,
-      hideNotificationAction: false,
-      deliveryFailure: false,
-      isFormInvalid: false,
-      sending: false
-    };
-  }
-
-  handleCheck = title => {
-    if (this.state.choices.includes(title)) {
-      this.setState({
-        choices: this.state.choices.filter(e => e !== title)
-      });
-    } else {
-      this.setState({
-        choices: [...this.state.choices, title]
-      });
-    }
-  };
-
-  handleInputChange = event => {
-    const name = event.target.name;
-    this.setState({
-      [name]: event.target.value
-    });
-  };
-
-  handleRequest = () => {
-    if (!this.state.lastname || !this.state.firstname || !this.state.phone) {
-      // Reset running timeout & notif state
-      this.resetNotification();
-
-      // Run new notif
-      this.setState({
-        isFormInvalid: true
-      });
-
-      this.hideNotification();
-    } else if (!this.state.sending) {
-      this.setState({
-        sending: true
-      });
-      const templateId = process.env.REACT_APP_EMAILJS_TEMP_ID;
-      const sDate = new Date(this.state.startDate);
-      const eDate = new Date(this.state.endDate);
-
-      this.sendFeedback(templateId, {
-        firstname: this.state.firstname,
-        lastname: this.state.lastname,
-        phone: this.state.phone,
-        startDate:
-          sDate.getDate() +
-          "/" +
-          parseInt(sDate.getMonth() + 1) +
-          "/" +
-          sDate.getFullYear(),
-        endDate:
-          eDate.getDate() +
-          "/" +
-          parseInt(eDate.getMonth() + 1) +
-          "/" +
-          eDate.getFullYear(),
-        p1: this.state.choices[0] ? "- " + this.state.choices[0] : "",
-        p2: this.state.choices[1] ? "- " + this.state.choices[1] : "",
-        p3: this.state.choices[2] ? "- " + this.state.choices[2] : "",
-        p4: this.state.choices[3] ? "- " + this.state.choices[3] : "",
-        p5: this.state.choices[4] ? "- " + this.state.choices[4] : "",
-        p6: this.state.choices[5] ? "- " + this.state.choices[5] : "",
-        p7: this.state.choices[6] ? "- " + this.state.choices[6] : "",
-        p8: this.state.choices[7] ? "- " + this.state.choices[7] : "",
-        p9: this.state.choices[8] ? "- " + this.state.choices[8] : "",
-        p10: this.state.choices[9] ? "- " + this.state.choices[9] : "",
-        p11: this.state.choices[10] ? "- " + this.state.choices[10] : "",
-        p12: this.state.choices[11] ? "- " + this.state.choices[11] : "",
-        p13: this.state.choices[12] ? "- " + this.state.choices[12] : ""
-      });
-    }
-  };
-
-  handleDates = (startDate, endDate) => this.setState({ startDate, endDate });
-
-  resetNotification = () => {
-    window.clearTimeout(this.hideNotif);
-    window.clearTimeout(this.resetNotif);
-    this.setState({
-      isEmailSent: false,
-      deliveryFailure: false,
-      isFormInvalid: false,
-      hideNotificationAction: false
-    });
-  };
-
-  hideNotification = () => {
-    this.hideNotif = setTimeout(() => {
-      this.setState({ hideNotificationAction: true });
-    }, 3000);
-    this.resetNotif = setTimeout(() => {
-      this.setState({
-        isEmailSent: false,
-        deliveryFailure: false,
-        isFormInvalid: false,
-        hideNotificationAction: false
-      });
-    }, 4500);
-  };
-
-  initForm = () => {
-    this.setState({
-      choices: ["explication python", "versions python"],
-      firstname: "",
-      lastname: "",
-      phone: ""
-    });
-  };
-
-  sendFeedback(templateId, templateParams) {
-    window.emailjs
-      .send("smtp_server", templateId, templateParams)
-      .then(response => {
-        this.setState({
-          isEmailSent: true,
-          sending: false
-        });
-        this.initForm();
-        this.hideNotification();
-        console.log("Email successfully sent!", response.status, response.text);
-      })
-      .catch(err => {
-        this.setState({
-          deliveryFailure: true,
-          sending: false
-        });
-        this.hideNotification();
-        console.error("Failed, email has not been sent !", err);
-      });
-  }
-
+class Program extends PureComponent {
   render() {
     return (
       <section id="program">
-        {this.state.isEmailSent && (
-          <Notification
-            className={`notification-success ${
-              this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
-            }`}
-            text="Email envoyé"
-          />
-        )}
-        {this.state.deliveryFailure && (
-          <Notification
-            className={`notification-error ${
-              this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
-            }`}
-            text="Email non envoyé !"
-          />
-        )}
-        {this.state.isFormInvalid && (
-          <Notification
-            className={`notification-error ${
-              this.state.hideNotificationAction ? "slideInLeft" : "slideInRight"
-            }`}
-            text="Formulaire non valide"
-          />
-        )}
-        <TrainingDetailsCard />
-        <ProgramCard
-          handleCheck={this.handleCheck}
-          choices={this.state.choices}
-        />
-        <CalendarCard
-          handleInputChange={this.handleInputChange}
-          firstname={this.state.firstname}
-          lastname={this.state.lastname}
-          phone={this.state.phone}
-          onSubmit={this.handleRequest}
-          handleDates={this.handleDates}
-          startDate={this.state.startDate}
-          endDate={this.state.endDate}
-        />
+        <h2 className="program__title">programme</h2>
+        <div className="grid grid--justify-center program__card-container">
+          <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--10--md grid__column--5--lg ">
+            <div className="card program__info-card-python">
+              <div className="program__content-card-python">
+                <div className="program__content-card-title">python</div>
+                <Link to="/python">
+                  <div className="program__more-infos-btn">En savoir plus</div>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--10--md grid__column--5--lg ">
+            <div className="card program__info-card-docker">
+              <div className="program__content-card-docker">
+                <div className="program__content-card-title">docker</div>
+                <Link to="/docker">
+                  <div className="program__more-infos-btn">En savoir plus</div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     );
   }
