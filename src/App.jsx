@@ -21,6 +21,10 @@ class App extends Component {
           <Route exact path="/docker">
             <ProgramContent subject="docker" />
           </Route>
+
+          <Route exact path="/django">
+            <ProgramContent subject="django" />
+          </Route>
         </Switch>
         <Chat username="anonymous" />
       </Router>

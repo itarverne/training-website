@@ -49,7 +49,7 @@ export default class Footer extends Component {
           </div>
           <div className="grid__column grid__column--3--lg hide-sm">
             <div className="vertical-center">
-              <img src="../../images/logo-copyright.png" alt="ITArverne" />
+              <img src="../../images/logo-itarverne.png" alt="ITArverne" />
             </div>
           </div>
           <div className="grid__column grid__column--3--lg grid__column--6--sm">
@@ -103,9 +103,8 @@ export default class Footer extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ITArverne
+                ITArverne 2019
               </a>
-              2019
             </div>
           </div>
         </div>
