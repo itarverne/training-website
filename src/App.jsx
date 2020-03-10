@@ -4,7 +4,7 @@ import Home from "containers/home/home";
 import ProgramContent from "containers/programContent/programContent";
 import Chat from "components/chat/chat";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import Program from "./utils/programs";
 class App extends Component {
   render() {
     return (
@@ -15,16 +15,16 @@ class App extends Component {
           </Route>
 
           <Route exact path="/python">
-            <ProgramContent subject="python" />
+            <ProgramContent subject={Program.PYTHON} />
           </Route>
 
           <Route exact path="/docker">
-            <ProgramContent subject="docker" />
+            <ProgramContent subject={Program.DOCKER} />
           </Route>
 
-          <Route exact path="/django">
-            <ProgramContent subject="django" />
-          </Route>
+          {/* <Route exact path="/django">
+            <ProgramContent subject={Program.DJANGO} />
+          </Route> */}
         </Switch>
         <Chat username="anonymous" />
       </Router>

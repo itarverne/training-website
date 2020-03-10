@@ -21,9 +21,9 @@ class ProgramCard extends PureComponent {
                     <input
                       className="programCard__checkbox control__checkbox"
                       type="checkbox"
-                      checked={this.props.choices.includes(item.title)}
+                      checked={this.props.choices.includes(item.key)}
                       id={item.title}
-                      onChange={() => this.props.handleCheck(item.title)}
+                      onChange={() => this.props.handleCheck(item.key)}
                     />
                   </div>
                   <ul className="list list--unstyled">
@@ -54,9 +54,9 @@ class ProgramCard extends PureComponent {
                     <input
                       className="programCard__checkbox control__checkbox"
                       type="checkbox"
-                      checked={this.props.choices.includes(item.title)}
+                      checked={this.props.choices.includes(item.key)}
                       id={item.title}
-                      onChange={() => this.props.handleCheck(item.title)}
+                      onChange={() => this.props.handleCheck(item.key)}
                     />
                   </div>
                   <ul className="list list--unstyled">

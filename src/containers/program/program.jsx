@@ -36,7 +36,7 @@ class Program extends Component {
               </div>
             </Link>
           </div>
-          <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--6--md grid__column--4--lg ">
+          {/* <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--6--md grid__column--4--lg ">
             <Link to="/django">
               <div className="card program__info-card-django">
                 <div className="program__content-card-django">
@@ -49,7 +49,7 @@ class Program extends Component {
                 </div>
               </div>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
     );
