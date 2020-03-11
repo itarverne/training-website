@@ -2,100 +2,6 @@ import React, { PureComponent } from "react";
 import "./programCard.css";
 
 class ProgramCard extends PureComponent {
-  dictionary = {
-    left: [
-      {
-        title: "explications sur le langage python",
-        elements: [
-          "Histoire",
-          "Futurs perspectives du langage",
-          "Fonctionnement du core"
-        ]
-      },
-      {
-        title: "versions python",
-        elements: [
-          "Support des versions",
-          "Différences v2/v3",
-          "Exemples des différences",
-          "Comment migrer ses outils"
-        ]
-      },
-      {
-        title: "environnement",
-        elements: [
-          "Virtualisation",
-          "IDE",
-          "Configuration de son poste de travail"
-        ]
-      },
-      {
-        title: "les bases du dev",
-        elements: [
-          "Serveur python synchrone et asychrone",
-          "Architecture monolithique/webservice",
-          "Découpage Front / Back",
-          "REST / SOAP / ..."
-        ]
-      },
-      {
-        title: "les bases en programmation python",
-        elements: [
-          "Ligne directrice python",
-          "Normes de codage",
-          "Librairies de vérification",
-          "Typage",
-          "Variables primitives",
-          "Variables complexes",
-          "Test conditionnel / boucle",
-          "POO",
-          "CLI / WEB"
-        ]
-      }
-    ],
-    right: [
-      {
-        title: "configurer un environnement",
-        elements: []
-      },
-      {
-        title: "faire son premier script",
-        elements: []
-      },
-      {
-        title: "tests unitaires",
-        elements: ["Pytest", "Intégrer avec Gitlab", "Intégrer avec Tox"]
-      },
-      {
-        title: "trucs et astuces",
-        elements: []
-      },
-      {
-        title: "python avancé",
-        elements: ["Yield", "Decorator"]
-      },
-      {
-        title: "faire son package",
-        elements: ["Sémantique", "Librairies", "Publier son code"]
-      },
-      {
-        title: "les frameworks web",
-        elements: ["Flask", "Django"]
-      },
-      {
-        title: "devops avec gitlab",
-        elements: [
-          "Configurer son projet",
-          "Gestion des branches",
-          "Utiliser les variables Gitlab",
-          "Token Gitlab",
-          "CI / CD",
-          "Ansible"
-        ]
-      }
-    ]
-  };
-
   render() {
     return (
       <div className="programCard">
@@ -103,7 +9,7 @@ class ProgramCard extends PureComponent {
           <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="programCard__left">
               <div className="programCard__title padding-xs">programme</div>
-              {this.dictionary.left.map(item => (
+              {this.props.dictionary.left.map(item => (
                 <div key={item.title}>
                   <div className="programCard_header">
                     <label
@@ -115,9 +21,9 @@ class ProgramCard extends PureComponent {
                     <input
                       className="programCard__checkbox control__checkbox"
                       type="checkbox"
-                      checked={this.props.choices.includes(item.title)}
+                      checked={this.props.choices.includes(item.key)}
                       id={item.title}
-                      onChange={() => this.props.handleCheck(item.title)}
+                      onChange={() => this.props.handleCheck(item.key)}
                     />
                   </div>
                   <ul className="list list--unstyled">
@@ -136,7 +42,7 @@ class ProgramCard extends PureComponent {
           </div>
           <div className="grid__column grid__column--12 padding-nulled grid__column--11--sm grid__column--8--md grid__column--5--lg">
             <div className="programCard__right">
-              {this.dictionary.right.map(item => (
+              {this.props.dictionary.right.map(item => (
                 <div key={item.title}>
                   <div className="programCard_header">
                     <label
@@ -148,9 +54,9 @@ class ProgramCard extends PureComponent {
                     <input
                       className="programCard__checkbox control__checkbox"
                       type="checkbox"
-                      checked={this.props.choices.includes(item.title)}
+                      checked={this.props.choices.includes(item.key)}
                       id={item.title}
-                      onChange={() => this.props.handleCheck(item.title)}
+                      onChange={() => this.props.handleCheck(item.key)}
                     />
                   </div>
                   <ul className="list list--unstyled">

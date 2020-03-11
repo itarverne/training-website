@@ -22,3 +22,7 @@ yarn-error.log*
 # Environment variable
 
 .env
+
+package-lock.json
+
+.vscode/
