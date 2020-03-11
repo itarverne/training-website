@@ -62,7 +62,7 @@ class TrainingDetailsCard extends PureComponent {
                 {this.props.dictionary.s5.title}
               </div>
               <div className="trainingDetailsCard__square-content">
-                <span> {this.props.dictionary.s5.rate}</span>
+                <span>{this.props.dictionary.s5.rate} </span>
                 {this.props.dictionary.s5.content}
               </div>
             </div>

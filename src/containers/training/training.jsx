@@ -12,6 +12,8 @@ class Training extends PureComponent {
     "Vous avez quelques bases en python et vous avez envie de réaliser des applications web, le framework Django est un des outils les plus utilisés. Suivez notre formation django et participez à notre atelier pour découvrir la réalisation d'application web python.";
   textBloc =
     "ITARVERNE est votre partenaire idéal pour vous accompagner dans la formation de vos équipes de développeurs. Notre expertise dans le domaine du développement web et plus particulièrement le python, est mis à votre service afin de réaliser des formations / cours Python sur mesure. Que ce soit pour la découverte du framework python Django ou encore un perfectionnement dans l'usage du langage python.";
+  docker =
+    "Docker est utilisé avec énormément de technologies, et vous pourriez avoir besoin de créer des environnements de manière isolée pour vos applications. Suivez notre programme pour apprendre à mettre en place Docker dans vos projets.";
   render() {
     return (
       <section id="training" className="content">
@@ -41,7 +43,7 @@ class Training extends PureComponent {
               <TrainingCard title="django" content={this.django} />
             </div>
             <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
-              <TrainingCard title="docker" content={this.python} />
+              <TrainingCard title="docker" content={this.docker} />
             </div>
           </div>
         </div>

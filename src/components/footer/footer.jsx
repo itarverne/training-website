@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 export default class Footer extends Component {
   tel = "06.44.28.80.72";
   name = "david.rigaudie";
@@ -25,6 +25,16 @@ export default class Footer extends Component {
                 <a href="#program" className="footer__text">
                   Programme
                 </a>
+              </li>
+              <li className="list__item">
+                <Link className="footer__text" to="/python">
+                  Python
+                </Link>
+              </li>
+              <li className="list__item">
+                <Link className="footer__text" to="/docker">
+                  Docker
+                </Link>
               </li>
             </ul>
           </div>
