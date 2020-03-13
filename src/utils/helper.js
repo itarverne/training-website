@@ -277,7 +277,7 @@ const progromDetailsDocker = {
     title: "Satisfaction client",
     rate: "90%",
     content:
-      "de nos clients sont satisfaits par la qualité de nos formations python."
+      "de nos clients sont satisfaits par la qualité de nos formations docker."
   },
   s6: {
     title: "pré requis",
