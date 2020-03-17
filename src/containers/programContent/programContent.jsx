@@ -172,7 +172,8 @@ class ProgramContent extends Component {
       <section id="program-content">
         <div className="home-btn">
           <Link to="/">
-            <i className="fas fa-home margin-xxs "></i>Accueil
+            <span className="home-icon" />
+            Accueil
           </Link>
         </div>
         {this.state.isEmailSent && (

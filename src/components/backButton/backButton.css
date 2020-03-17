@@ -21,3 +21,10 @@
 .back-button a:hover {
     color: #ffffff;
 }
+
+.chevron-left-icon{
+    background-image: url("../../images/chevron-left-solid.svg");
+    background-repeat: no-repeat;
+    padding: 4px 10px 0 10px;
+    margin: 10px;
+}

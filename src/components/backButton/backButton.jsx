@@ -6,7 +6,8 @@ class BackButton extends PureComponent {
     return (
       <div className="back-button">
         <a href="https://itarverne.fr/" alt="">
-          <i className="fas fa-chevron-left margin-xxs "></i>itarverne.fr
+          <span className="chevron-left-icon" />
+          itarverne.fr
         </a>
       </div>
     );

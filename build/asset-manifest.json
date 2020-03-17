@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.00d81c58.chunk.css",
-    "main.js": "/static/js/main.36b8b1f3.chunk.js",
-    "main.js.map": "/static/js/main.36b8b1f3.chunk.js.map",
+    "main.css": "/static/css/main.9e14e168.chunk.css",
+    "main.js": "/static/js/main.b2f7eb76.chunk.js",
+    "main.js.map": "/static/js/main.b2f7eb76.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67ea0481.js",
     "runtime-main.js.map": "/static/js/runtime-main.67ea0481.js.map",
     "static/css/2.78af26da.chunk.css": "/static/css/2.78af26da.chunk.css",
     "static/js/2.ea76e208.chunk.js": "/static/js/2.ea76e208.chunk.js",
     "static/js/2.ea76e208.chunk.js.map": "/static/js/2.ea76e208.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0acfcf145eeac12b5e19b1450a66c25f.js": "/precache-manifest.0acfcf145eeac12b5e19b1450a66c25f.js",
+    "precache-manifest.d0a612419070b5abe015ccd741617bf1.js": "/precache-manifest.d0a612419070b5abe015ccd741617bf1.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.78af26da.chunk.css.map": "/static/css/2.78af26da.chunk.css.map",
-    "static/css/main.00d81c58.chunk.css.map": "/static/css/main.00d81c58.chunk.css.map",
+    "static/css/main.9e14e168.chunk.css.map": "/static/css/main.9e14e168.chunk.css.map",
     "static/media/message.scss": "/static/media/AvenirLTStd-Roman.9c62dd0a.otf",
-    "static/media/trainerCard.css": "/static/media/david.a1274322.png",
+    "static/media/backButton.css": "/static/media/chevron-left-solid.e749cbba.svg",
+    "static/media/trainerCard.css": "/static/media/david.60dcfce6.png",
     "static/media/trainer.css": "/static/media/fond-formateur.792bde6d.jpg",
-    "static/media/training.css": "/static/media/fond-formation.0c77af4f.jpg",
-    "static/media/programContent.css": "/static/media/fond-prog.441b07a6.jpg",
+    "static/media/training.css": "/static/media/fond-formation.7a1ac09b.jpg",
+    "static/media/programContent.css": "/static/media/home-icon.25d1a37c.svg",
     "static/media/program.css": "/static/media/program_python.0df31bd0.jpg",
     "static/media/trainingDetailsCard.css": "/static/media/satisfaction.7fc191d3.svg",
     "static/media/tel.svg": "/static/media/tel.2fbdd366.svg"
@@ -26,7 +27,7 @@
     "static/js/runtime-main.67ea0481.js",
     "static/css/2.78af26da.chunk.css",
     "static/js/2.ea76e208.chunk.js",
-    "static/css/main.00d81c58.chunk.css",
-    "static/js/main.36b8b1f3.chunk.js"
+    "static/css/main.9e14e168.chunk.css",
+    "static/js/main.b2f7eb76.chunk.js"
   ]
 }
