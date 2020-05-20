@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import Home from "containers/home/home";
 import ProgramContent from "containers/programContent/programContent";
-import Chat from "components/chat/chat";
+import Chat from "./components/chat/chat";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Program from "./utils/programs";
 class App extends Component {

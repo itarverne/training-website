@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./trainerCard.css";
 
+import PCEP from "../../images/pcep.png";
+import PCAP from "../../images/pcap.png";
+
 class TrainerCard extends Component {
   render() {
     return (
@@ -26,13 +29,15 @@ class TrainerCard extends Component {
                   interfaces REST, l'optimisation pour les navigateurs ou encore
                   la sécurité n'ont plus de secret pour lui.
                 </div>
-                {/* <div className="trainerCard__text-title">activites</div>
-                <div className="trainerCard__text-content">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Blanditiis dicta non aperiam, quia temporibus, vel quaerat
-                  officiis iure odit dolorem enim at incidunt quo facere soluta
-                  totam, laboriosam sequi et.
-                </div> */}
+                <div className="trainerCard__text-title">Certifications</div>
+                  <div className="trainerCard__text-content type-center">
+                    <img src={PCEP} className="trainerCard__certif-img" alt="David RIGAUDIE certifié PCEP - Python Institute"/>
+                    <span className="hide-sm">PCEP - Python Institute</span>
+                  </div>
+                  <div className="trainerCard__text-content type-center">
+                    <img src={PCAP} className="trainerCard__certif-img" alt="David RIGAUDIE certifié PCAP - Python Institute"/>
+                    <span className="hide-sm">PCAP - Python Institute</span>
+                  </div>
               </div>
               {/* <div className="trainerCard__text-right">
                 <div className="trainerCard__text-title">formations</div>

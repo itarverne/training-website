@@ -113,7 +113,7 @@ export default class Footer extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ITArverne 2019
+                ITArverne 2019-2020
               </a>
             </div>
           </div>
