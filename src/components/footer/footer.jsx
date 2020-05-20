@@ -22,8 +22,8 @@ export default class Footer extends Component {
                 </a>
               </li>
               <li className="list__item">
-                <a href="#program" className="footer__text">
-                  Programme
+                <a href="#formation" className="footer__text">
+                  Formations
                 </a>
               </li>
               <li className="list__item">
