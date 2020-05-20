@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24b91add2faa25ce35c764c8b7162844",
+    "revision": "180645e3413b111e4fce1d27b5f16fe0",
     "url": "/index.html"
   },
   {
@@ -8,16 +8,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.55db43dc.chunk.css"
   },
   {
-    "revision": "93254c139ca5d7186718",
-    "url": "/static/css/main.88708220.chunk.css"
+    "revision": "d449ca998a023df3820a",
+    "url": "/static/css/main.05667a03.chunk.css"
   },
   {
     "revision": "b6912884823f11ade1b5",
     "url": "/static/js/2.a1fcbe82.chunk.js"
   },
   {
-    "revision": "93254c139ca5d7186718",
-    "url": "/static/js/main.7d27a28d.chunk.js"
+    "revision": "d449ca998a023df3820a",
+    "url": "/static/js/main.c6c658e6.chunk.js"
   },
   {
     "revision": "c940b6117995b0dda001",
@@ -60,8 +60,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/formation_docker.597d92a5.jpg"
   },
   {
+    "revision": "fe92c1051f49ed3fd38af56eb8a33d03",
+    "url": "/static/media/formation_git.fe92c105.jpeg"
+  },
+  {
     "revision": "0df31bd0d90d8cd0a9c4aac695542011",
     "url": "/static/media/formation_python.0df31bd0.jpg"
+  },
+  {
+    "revision": "a664cc7060422c12544ad1dcb0430242",
+    "url": "/static/media/formation_react.a664cc70.jpeg"
   },
   {
     "revision": "25d1a37c245acdea05e74f06381df179",
