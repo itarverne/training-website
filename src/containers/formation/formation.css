@@ -1,4 +1,4 @@
-#program{
+#formation{
     background-image: url('../../images/fond-prog.jpg');
     min-height: 100vh;
     background-size: cover;
@@ -13,11 +13,11 @@
 
 }
 
-.program__card-container{
+.formation__card-container{
     margin-top: 70px;
 }
 
-.program__title{
+.formation__title{
     text-transform: uppercase;
     font-size: 2em;
     margin-top: 70px;
@@ -29,8 +29,8 @@
     letter-spacing: 1px;
 }
 
-.card.program__info-card-python{
-    background-image: url('../../images/program_python.jpg');
+.card.formation__info-card-python{
+    background-image: url('../../images/formation_python.jpg');
     background-size: cover;
     max-width: 450px;
     height: 300px;
@@ -39,16 +39,16 @@
     box-shadow: 0px 4px 17px -6px #000000;
 }
 
-.card.program__info-card-python:hover, .card.program__info-card-docker:hover, .card.program__info-card-django:hover{
+.card.formation__info-card-python:hover, .card.formation__info-card-docker:hover, .card.formation__info-card-django:hover{
     transform: scale(1.07) ;
     transition: all .1s ease-in-out;
 }
 
-.card.program__info-card-docker:hover .program__content-card-docker, .card.program__info-card-python:hover .program__content-card-python, .card.program__info-card-django:hover .program__content-card-django  {
+.card.formation__info-card-docker:hover .formation__content-card-docker, .card.formation__info-card-python:hover .formation__content-card-python, .card.formation__info-card-django:hover .formation__content-card-django  {
     background: rgba(33, 37, 49, .4);
 }
 
-.program__content-card-python{
+.formation__content-card-python{
     height: 100%;
     width: 100%;
     margin-left: auto;
@@ -56,7 +56,7 @@
     position: relative;
 }
 
-.program__content-card-title{
+.formation__content-card-title{
     color: rgb(255, 115, 0);
     font-family: 'AvenirLTStd-Roman';
     text-transform: uppercase;
@@ -68,8 +68,8 @@
     left: 45%;
     letter-spacing: 1px;
 }
-.card.program__info-card-docker{
-    background-image: url('../../images/program_docker.jpg');
+.card.formation__info-card-docker{
+    background-image: url('../../images/formation_docker.jpg');
     background-size: cover;
     max-width: 450px;
     height: 300px;
@@ -78,14 +78,14 @@
     box-shadow: 0px 4px 17px -6px #000000;    
 }
 
-.program__content-card-docker{
+.formation__content-card-docker{
     height: 100%;
     width: 100%;
     background: linear-gradient(to right bottom, rgba(33, 37, 49, .4)50%, rgba(255, 255, 255, 0.6)  50%);
     position: relative;
 }
 
-.program__more-infos-btn{
+.formation__more-infos-btn{
     position: absolute;
     top: 25%;
     background-color:  rgb(136, 69, 14);
@@ -97,19 +97,19 @@
     cursor: pointer;
 }
 
-.program__more-infos-btn:hover{
+.formation__more-infos-btn:hover{
     background-color:  rgb(236, 155, 89);
 }
 
-.program__content-card-django{
+.formation__content-card-django{
     height: 100%;
     width: 100%;
     background: linear-gradient(to right bottom, rgba(33, 37, 49, .4)50%, rgba(255, 255, 255, 0.6)  50%);
     position: relative;
 }
 
-.card.program__info-card-django{
-    background-image: url('../../images/program_django.jpg');
+.card.formation__info-card-django{
+    background-image: url('../../images/formation_django.jpg');
     background-size: cover;
     max-width: 450px;
     height: 300px;

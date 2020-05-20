@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import "./program.css";
+import "./formation.css";
 import { Link } from "react-router-dom";
 
-class Program extends Component {
+class Formation extends Component {
   render() {
     return (
-      <section id="program">
-        <h2 className="program__title">programme</h2>
-        <div className="grid grid--justify-center program__card-container">
+      <section id="formation">
+        <h2 className="formation__title">formations</h2>
+        <div className="grid grid--justify-center formation__card-container">
           <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--6--md grid__column--4--lg ">
             <Link to="/python">
-              <div className="card program__info-card-python">
-                <div className="program__content-card-python">
-                  <div className="program__content-card-title">python</div>
+              <div className="card formation__info-card-python">
+                <div className="formation__content-card-python">
+                  <div className="formation__content-card-title">python</div>
                   <Link to="/python">
-                    <div className="program__more-infos-btn">
+                    <div className="formation__more-infos-btn">
                       En savoir plus
                     </div>
                   </Link>
@@ -24,11 +24,11 @@ class Program extends Component {
           </div>
           <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--6--md grid__column--4--lg ">
             <Link to="/docker">
-              <div className="card program__info-card-docker">
-                <div className="program__content-card-docker">
-                  <div className="program__content-card-title">docker</div>
+              <div className="card formation__info-card-docker">
+                <div className="formation__content-card-docker">
+                  <div className="formation__content-card-title">docker</div>
                   <Link to="/docker">
-                    <div className="program__more-infos-btn">
+                    <div className="formation__more-infos-btn">
                       En savoir plus
                     </div>
                   </Link>
@@ -38,11 +38,11 @@ class Program extends Component {
           </div>
           {/* <div className=" grid__column grid__column--12 grid__column--11--sm grid__column--6--md grid__column--4--lg ">
             <Link to="/django">
-              <div className="card program__info-card-django">
-                <div className="program__content-card-django">
-                  <div className="program__content-card-title">django</div>
+              <div className="card formation__info-card-django">
+                <div className="formation__content-card-django">
+                  <div className="formation__content-card-title">django</div>
                   <Link to="/django">
-                    <div className="program__more-infos-btn">
+                    <div className="formation__more-infos-btn">
                       En savoir plus
                     </div>
                   </Link>
@@ -56,4 +56,4 @@ class Program extends Component {
   }
 }
 
-export default Program;
+export default Formation;

@@ -30,10 +30,10 @@ export default class Header extends Component {
               </li>
               <li className="header__nav-element">
                 <a
-                  href="#program"
+                  href="#formation"
                   className="header__title header__title-training"
                 >
-                  Programme
+                  Formations
                 </a>
               </li>
             </ul>
