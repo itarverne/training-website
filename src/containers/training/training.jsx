@@ -43,7 +43,7 @@ class Training extends PureComponent {
               <TrainingCard title="python" content={this.python} />
             </div>
             <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
-              <TrainingCard title="django" content={this.django} />
+              <TrainingCard title="django" content={this.django} available={false}/>
             </div>
             <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
               <TrainingCard title="docker" content={this.docker} />

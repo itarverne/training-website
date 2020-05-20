@@ -92,7 +92,7 @@ export default class Footer extends Component {
                 </a>
               </li>
               <li className="list__item">
-                <a href={`mailto:${this.name}@${this.domain}.${this.dlt}`}>
+                <a href={`mailto:${this.name}@${this.domain}.${this.tld}`}>
                   <img src="../../images/mail_brown.png" alt="Email" />
                 </a>
               </li>
