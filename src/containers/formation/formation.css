@@ -39,21 +39,22 @@
     box-shadow: 0px 4px 17px -6px #000000;
 }
 
-.card.formation__info-card-python:hover, .card.formation__info-card-docker:hover, .card.formation__info-card-django:hover{
+.card.formation__info-card-python:hover,
+.card.formation__info-card-docker:hover,
+.card.formation__info-card-django:hover,
+.card.formation__info-card-react:hover,
+.card.formation__info-card-git:hover
+{
     transform: scale(1.07) ;
     transition: all .1s ease-in-out;
 }
 
-.card.formation__info-card-docker:hover .formation__content-card-docker, .card.formation__info-card-python:hover .formation__content-card-python, .card.formation__info-card-django:hover .formation__content-card-django  {
+.card.formation__info-card-docker:hover .formation__content-card-docker, 
+.card.formation__info-card-python:hover .formation__content-card-python, 
+.card.formation__info-card-django:hover .formation__content-card-django,
+.card.formation__info-card-react:hover .formation__content-card-react,
+.card.formation__info-card-git:hover .formation__content-card-git  {
     background: rgba(33, 37, 49, .4);
-}
-
-.formation__content-card-python{
-    height: 100%;
-    width: 100%;
-    margin-left: auto;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6) 50%, rgba(33, 37, 49, .4) 50%);
-    position: relative;
 }
 
 .formation__content-card-title{
@@ -78,13 +79,6 @@
     box-shadow: 0px 4px 17px -6px #000000;    
 }
 
-.formation__content-card-docker{
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right bottom, rgba(33, 37, 49, .4)50%, rgba(255, 255, 255, 0.6)  50%);
-    position: relative;
-}
-
 .formation__more-infos-btn{
     position: absolute;
     top: 25%;
@@ -101,7 +95,7 @@
     background-color:  rgb(236, 155, 89);
 }
 
-.formation__content-card-django{
+.formation__content-card-python, .formation__content-card-docker, .formation__content-card-django, .formation__content-card-react, .formation__content-card-git{
     height: 100%;
     width: 100%;
     background: linear-gradient(to right bottom, rgba(33, 37, 49, .4)50%, rgba(255, 255, 255, 0.6)  50%);
@@ -110,6 +104,26 @@
 
 .card.formation__info-card-django{
     background-image: url('../../images/formation_django.jpg');
+    background-size: cover;
+    max-width: 450px;
+    height: 300px;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 4px 17px -6px #000000; 
+    box-shadow: 0px 4px 17px -6px #000000;
+}
+
+.card.formation__info-card-react {
+    background-image: url('../../images/formation_react.jpeg');
+    background-size: cover;
+    max-width: 450px;
+    height: 300px;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 4px 17px -6px #000000; 
+    box-shadow: 0px 4px 17px -6px #000000;
+}
+
+.card.formation__info-card-git {
+    background-image: url('../../images/formation_git.jpeg');
     background-size: cover;
     max-width: 450px;
     height: 300px;

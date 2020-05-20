@@ -3,9 +3,6 @@ import React, { PureComponent } from "react";
 import "./trainingCard.css";
 
 class TrainingCard extends PureComponent {
-  name = "david.rigaudie";
-  domain = "itarverne";
-  tld = "com";
 
   render() {
     return (
@@ -17,20 +14,12 @@ class TrainingCard extends PureComponent {
           <div className="card-content-wrapper">
             <p>{this.props.content}</p>
           </div>
-          {this.props.available === false ?
-          <a
-            href={`mailto:${this.name}@${this.domain}.${this.tld}`}
-            className="button button--outlined button--xxs card__button type-center learn-more-btn"
-          >
-            nous consulter
-          </a>
-          :
           <a
             href="#formation"
             className="button button--outlined button--xxs card__button type-center learn-more-btn"
           >
             en savoir plus
-          </a>}
+          </a>
         </div>
       </div>
     );

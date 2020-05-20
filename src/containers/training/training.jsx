@@ -15,7 +15,9 @@ class Training extends PureComponent {
     "ITARVERNE est votre partenaire idéal pour vous accompagner dans la formation de vos équipes de développeurs. Notre expertise dans le domaine du développement web et plus particulièrement le python, est mis à votre service afin de réaliser des formations / cours Python sur mesure. Que ce soit pour la découverte du framework python Django ou encore un perfectionnement dans l'usage du langage python.";
   docker =
     "Docker est utilisé avec énormément de technologies, et vous pourriez avoir besoin de créer des environnements de manière isolée pour vos applications. Suivez notre programme pour apprendre à mettre en place Docker dans vos projets.";
-  datadock = "Depuis cette année votre centre de formation est référencé en tant qu'organisme de formation auprès de Datadock pour sa démarche qualité. Cet engagenemnt nous permet d'être référencé auprès de votre OPCO pour envisager un financement par celui-ci."
+  react = "React, un framework UI, développé par facebook ne cesse de montrer ses capacités et les entreprises l'ont bien compris en intégrant cette technologie dans leur application."
+  git = "GIT est le gestionnaire de version de code le plus utilisé, mais il regorge de nombreuses fonctionnalités méconnues des développeurs. Il est indispensable de comprendre ses concepts surtout dans un travail collaboratif."
+    datadock = "Depuis cette année votre centre de formation est référencé en tant qu'organisme de formation auprès de Datadock pour sa démarche qualité. Cet engagenemnt nous permet d'être référencé auprès de votre OPCO pour envisager un financement par celui-ci."
   covid19 = "IMPORTANT : suite à la crise sanitaire le gouvernement a assouppli les conditions de subvention formation FNE-Formation. Pour une prise en charge totale de vos frais de formation (sous réserve de validation par la Direccte) n'hésitez pas à prendre contact via notre formulaire pour demander votre devis."
     render() {
     return (
@@ -47,6 +49,12 @@ class Training extends PureComponent {
             </div>
             <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
               <TrainingCard title="docker" content={this.docker} />
+            </div>
+            <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
+              <TrainingCard title="react" content={this.react} />
+            </div>
+            <div className="grid__column grid__column--8--sm grid__column--6--md grid__column--4--lg">
+              <TrainingCard title="git" content={this.git} />
             </div>
           </div>
           <div className="grid grid--justify-center training__grid">
